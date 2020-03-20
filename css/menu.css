@@ -1,0 +1,82 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: Verdana;
+
+}
+body{
+    background-image: url(../img/flores.jpg);
+    
+}
+
+header{
+   
+    margin:100px auto;
+    width: 1200px;
+    height: 250px;  
+ 
+}
+div.contenedor{
+    width: 171px;
+    height: 230px;
+    float: left;
+    transition: height .4s;
+
+}
+div#uno{
+    background-color: rgb(43, 65, 94);
+
+}
+div#dos{
+    background-color: rgb(63, 85, 68);
+
+}
+div#tres{
+    background-color: rgb(43, 65, 94);
+
+}
+div#cuatro{
+    background-color:rgb(63, 85, 68);
+
+}
+div#cinco{
+    background-color: rgb(43, 65, 94);
+
+}
+div#seis{
+    background-color: rgb(63, 85, 68);
+
+}
+div#siete{
+    background-color: rgb(43, 65, 94);
+
+}
+img.icon{
+    display: block;
+    margin:50px auto;
+    width: 100px;
+   padding: 2px;
+   border-radius: 40%;
+   background-color: rgba(255,255,255,.15);
+   box-shadow:0px 0px 0px 30px rgba(255,255,255,.0);
+   transition: box-shadow .4s;
+}
+
+p.texto{
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.712);
+    text-align: center;
+    opacity: 0.9;
+    padding-top: 1px;
+}
+div.contenedor:hover{
+    height: 255px;
+}
+div.contenedor:hover p.texto{
+    padding-top: 25px;
+    transition: padding-top .4s;
+    opacity: 1;
+}
+div.contenedor:hover img.icon{
+    box-shadow: 0px 0px 0px 0px rgba(75, 123, 148, 0.6);
+}
