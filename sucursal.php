@@ -47,7 +47,7 @@
 
 	 	<div class="panel panel-default" style="margin-top: 10px"> 		
 			<div class="panel-heading">
-		   		<h1 style="text-align:center;">Sucursal</h1> 
+		   		<h1 style="text-align:center;">Planes Funerarios</h1> 
 				   			
 			</div>
 			<div class="panel-body">
@@ -59,11 +59,11 @@
 	 			<table class="table table-striped" style="text-align: center;">
 			 		<thead>
 			 			<tr>
-			 				<th>Sucursal</th>
-			 				<th>Nombre</th>
-							 <th>Direccion</th>
-							 <th>Telefono</th>
-			 				<th>Estado</th> 				
+			 				<th>Numero de Plan</th>
+			 				<th>Nombre de Plan</th>
+							 <th>Costo de Plan</th>
+							 <th>Estado de Plan</th>
+			 						
 			 				<th></th>
 			 			</tr>
 			 		</thead>
@@ -73,14 +73,13 @@
 		 				while ( $row= $query->fetch_assoc() ) {
 		 					echo" 
 								<tr>
-					 				<td>".$row['sucursal']."</td>
-									 <td>".$row['nombre_neg']."</td>
-									 <td>".$row['direccion_neg']."</td>
-					 				<td>".$row['numero_neg']."</td>
-									 <td>".$row['estado_neg']."</td>
+					 				<td>".$row['id_plan']."</td>
+									 <td>".$row['nombre_plan']."</td>
+									 <td>".$row['costo_plan']."</td>
+									 <td>".$row['estado_plan']."</td>
 					 				<td>
-					 					<a href='sucursal_actualizar.php?id=".$row['sucursal']."' class='btn btn-primary'>Editar</a>
-					 					<a href='php\sucursal_registro.php?accion=DLT&id=".$row['sucursal']."' class='btn btn-danger'>Eliminar</a>
+					 					<a href='sucursal_actualizar.php?id=".$row['id_plan']."' class='btn btn-primary'>Editar</a>
+					 					<a href='php\sucursal_registro.php?accion=DLT&id=".$row['id_plan']."' class='btn btn-danger'>Eliminar</a>
 					 				</td>
 					 			</tr>
 		 					";
