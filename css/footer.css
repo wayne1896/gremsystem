@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+    box-sizing: border-box;
+   
+}
+footer.sticky-footer{
+    background-color: #343a40;
+    height: 40px;
+
+}
+div.copyright{
+    color: blanchedalmond;
+}

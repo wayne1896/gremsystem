@@ -45,8 +45,6 @@ include('php\consultas\consultalogin.php');
     <a class="navbar-brand mr-1" href="menu.php">GremSystem</a>
    
 
-
-
     <!-- Navbar Search -->
     
       
