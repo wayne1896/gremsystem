@@ -6,6 +6,14 @@
 }
   
 ?>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest minified bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
   <div class="panel panel-default" style="margin-top: 10px">
   	<div class="panel-heading">
@@ -62,7 +70,7 @@
 				
 
 				<div class="col-md-5 col-md-offset-2 col-sm-4
-    			col-sm-offset-2 col-lg-5 col-Ig-offset-2 col-xs-12
+    			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Direccion <span style="color:red">*</span></label>
