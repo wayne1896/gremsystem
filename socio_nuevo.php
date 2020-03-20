@@ -1,5 +1,5 @@
 <?php 
- include('php\pcabeza\pcabezacliente.php');	
+  include('php/pcabeza\pcabezaempleado.php');
  require_once ("config/db.php");
  require_once ("config/conexion.php");
 ?>
@@ -91,5 +91,5 @@
 	</div>
 </div>
 <?php	
-	include('php/ppie.php');		
+	include('php/ppie_menu.php');		
 ?>

@@ -60,7 +60,7 @@ include('php\consultas\consultadeuda.php');
 		<li class="<?php echo $active_clientes;?>"><a href="socio.php"><i class='glyphicon glyphicon-user'></i><font color="" size="4"> Clientes</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href="empleados.php"><i  class='glyphicon glyphicon-lock'></i><font color="" size="4"> Empleados</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href="deceso.php"><i  class='glyphicon glyphicon-briefcase'></i><font color="" size="4"> Decesos</font></a></li>
-    <li class="<?php echo $active_usuarios;?>"><a href="sucursal.php"><i  class='glyphicon glyphicon-phone-alt'></i><font color="" size="4"> Sucursal</font></a></li>
+    <li class="<?php echo $active_usuarios;?>"><a href="sucursal.php"><i  class='glyphicon glyphicon-phone-alt'></i><font color="" size="4"> Planes</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href=""><i  class='glyphicon glyphicon-plus-sign'></i><font color="" size="4"> Acerca de</font></a></li>
        </ul>
       <ul class="nav navbar-nav navbar-right">
