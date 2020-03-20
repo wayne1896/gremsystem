@@ -59,7 +59,6 @@
 				</p>	
 
 			
-			
 	 			<table class="table table-striped" style="text-align: center;">
 			 		<thead>
 			 			<tr>
