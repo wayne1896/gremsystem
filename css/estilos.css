@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #B0C4DE; 
+        
+}
+header{
+    background: white;
+     width: 100%;
+     border-radius: 15px;
+     height: 150px;
+    
+       
+}
+
+h3{
+    color:  #FFD537 ;
+
+}
+img{
+
+    margin: auto;
+    
+}
+.text{
+      font-size: 20px;
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+
+
+}
+.contra{
+      font-size: 20px;
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+}
+.sub_titulo{
+    color:   #DfBC35;
+ text-align: center;
+
+}
+
+.logo{
+    padding: 10px;
+}
+h2{
+     width: 96%;
+    padding: 10px;
+
+}
+.contenedor{
+    width: 100%;
+    
+}
+
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+.title{
+    margin-top: 0;
+    height: 140;
+}
+input[type="email"],
+input[type="password"]{
+
+    font-size: 20px;
+    width: 96%;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+}
+.contenedor2{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1A2537;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+ .formulario{
+   margin: auto;
+   width: 500px;
+   margin-top: 50px;
+   border-radius: 6%;
+    background: #fff;
+    padding: 25px;
+    
+ }
+ a{
+    width: 96%;
+    padding: 10px;
+    color: #242A2B;
+
+ }
+ .link{
+     color: #37CEff;
+
+}
+.footer-distributed{
+	background-color: #292C2F;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+    font: normal 16px sans-serif;
+    border-radius: 15px;
+    
+	padding: 25px 50px;
+	margin-top: 55px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+    font-size: 14px;
+    margin-top: 2px;
+	
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+    color:  inherit;
+    margin-top: 2px;
+	max-width: 60px;
+    
+ 
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 2px;
+	max-width: 250px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
