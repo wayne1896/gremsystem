@@ -20,7 +20,7 @@
     			<div class="form-group">
     				<label class="control-label">Codigo<span style="color:red">*</span></label>
     				<input type="text" name="codigo" required="" placeholder="Nombre y Apellido" class="form-control" required=""
-						readonly="" value="<?php echo $row['sucursal'] ?>">
+						readonly="" value="<?php echo $row['id_plan'] ?>">
     				
     			</div>
     			</div>
@@ -33,8 +33,8 @@
     			<div class="form-group">
     				<label class="control-label">Estado <span style="color:red">*</span></label>
     				<select class="form-control" name="estado">
-                       <option value="A" <?php if($row['estado_neg']=='A'){echo  "selected";}  ?>>Activo</option>
-                       <option value="I" <?php if($row['estado_neg']=='I'){echo  "selected";} ?>>Inactivo</option>
+                       <option value="A" <?php if($row['estado_plan']=='A'){echo  "selected";}  ?>>Activo</option>
+                       <option value="I" <?php if($row['estado_plan']=='I'){echo  "selected";} ?>>Inactivo</option>
 
 
 
@@ -47,28 +47,21 @@
           <div class="row">
 				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
-						<label class="control-label">Nombre<span style="color:red">*</span></label>
+						<label class="control-label">Nombre del Plan<span style="color:red">*</span></label>
 						<input type="text" id="nombre" name="nombre" required="" placeholder="Nombre" class="form-control"
-                        value="<?php echo $row['nombre_neg']?>">
+                        value="<?php echo $row['nombre_plan']?>">
 					</div>
 				</div>
 			
 				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
-						<label class="control-label">Direccion<span style="color:red">*</span></label>
-						<input type="text" id="direccion" name="direccion" required="" placeholder="direccion del negocio" class="form-control"
-                        value="<?php echo $row['direccion_neg']?>">
+						<label class="control-label">Costo del Plan<span style="color:red">*</span></label>
+						<input type="text" id="costo" name="costo" required="" placeholder="direccion del negocio" class="form-control"
+                        value="<?php echo $row['costo_plan']?>">
 					</div>
 				</div>
 				</div>
 	
-			<div class="row">
-				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
-					<div class="form-group">
-						<label class="control-label">Telefono<span style="color:red">*</span></label>
-						<input type="tel" id="telefono" name="telefono" required="" placeholder="Telefono" class="form-control"
-                        value="<?php echo $row['numero_neg']?>">
-					</div>
     				
     		
     		<div class="row">
@@ -76,7 +69,7 @@
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-    			      <a href="inventario.php" class="btn btn-danger">Atras</a>
+    			      <a href="sucursal.php" class="btn btn-danger">Atras</a>
     			      <input type="submit" value="Guardar" class="btn btn-success">  
     		      </div>
     		    </div>	

@@ -8,20 +8,17 @@
 	if ($i=='INS') {
 		$msj='';
 		$nombre=$_POST['nombre'];
-		$direccion=$_POST['direccion'];
-		$telefono=$_POST['telefono'];
+		$costo=$_POST['costo'];
+		
 	
 
 		$sql="
-		INSERT INTO `gremio`( `nombre_neg`, `numero_neg`, `estado_neg`, `direccion_neg`)
+		INSERT INTO `gremio`( `nombre_plan`, `costo_plan`, `estado_plan`)
 		 
 		 VALUES (
 		'$nombre',
-		'$telefono',
-		'A',
-		'$direccion'
-		
-		
+		'$costo',
+		'A'
 		)
 		";
 		if ($mysqli->query($sql)){
@@ -37,18 +34,16 @@
 		$msj='';
 		$codigo=$_POST['codigo'];
 		$nombre=$_POST['nombre'];
-		$telefono=$_POST['telefono'];
-		$direccion=$_POST['direccion'];
+		$costo=$_POST['costo'];
 		$estado=$_POST['estado'];
 		
 		$sql="
 		UPDATE `gremio` SET 
-		`nombre_neg`='$nombre',
-		`direccion_neg`='$direccion',
-		`numero_neg`='$telefono',
-		`estado_neg`='$estado'
+		`nombre_plan`='$nombre',
+		`costo_plan`='$costo',
+		`estado_plan`='$estado'
 		WHERE 
-		sucursal ='$codigo'
+		id_plan ='$codigo'
 		";
 		if ($mysqli->query($sql)){
 			$msj='successudt';
@@ -67,7 +62,7 @@
 		$sql="
 		UPDATE `gremio` SET 
 	
-		`estado_neg`='I' 
+		`estado_plan`='I' 
 		WHERE 
 		sucursal='$codigo'
 		";

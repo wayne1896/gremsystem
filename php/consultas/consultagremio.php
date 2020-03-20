@@ -6,7 +6,7 @@
 	}
 	function extraergremioUDT($id){
 		include('php\conexion.php');	
-		$sql="SELECT * FROM gremio where sucursal='$id'";
+		$sql="SELECT * FROM gremio where id_plan='$id'";
 		return $result=$mysqli->query($sql); 
 	}	
 ?>
