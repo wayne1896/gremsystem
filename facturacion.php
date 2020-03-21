@@ -55,7 +55,10 @@
 			
 				<p>
 					<a href="reporte.php" class="btn btn-info pull-left" target="_blank"style="margin-left: 10px">Reporte general</a>
-					<a href="general_factura.php" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
+					<form action="general_factura.php?accion=UDT" method="POST">
+					<a  class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
+					</form>
+					
 				</p>	
 
 			
