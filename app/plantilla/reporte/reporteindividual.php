@@ -7,7 +7,7 @@
       <div id="logo">
         <img src="img/logo.png">
       </div>
-      <h1>REPORTE GENERAL</h1>
+      <h1>REPORTE DE FACTURACION</h1>
       <div id="company" class="clearfix">
         <div>GremSystem Inc.. </div>
         <div>Bonao, Monseñol Nouel,<br /> CP 42000, RD</div>
