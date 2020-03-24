@@ -54,11 +54,8 @@
 			<div class="panel-body">
 			
 				<p>
-					<a href="reporte.php" class="btn btn-info pull-left" target="_blank"style="margin-left: 10px">Reporte general</a>
-					<form action="general_factura.php?accion=UDT" method="POST">
-					<a  class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
-					</form>
-					
+					<a href="app/index.php" class="btn btn-info pull-left" target="_blank"style="margin-left: 10px">Reporte general</a>
+					<a href="general_factura.php" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
 				</p>	
 
 			
@@ -89,7 +86,7 @@
 								<td>".$row['estadoclien']."</td>
 								<td>
 					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Facturar Deuda</a>
-					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='btn btn-info'>Reporte individual</a>
+					 					<a href='app/index2.php?id=".$row['id_clien']."' class='btn btn-info'>Reporte individual</a>
 					 				</td>
 					 			
 					 			</tr>
@@ -102,5 +99,5 @@
 		</div>
 
 <?php	
-	include('php/ppie.php');		
+	include('php/ppie_menu.php');		
 ?>

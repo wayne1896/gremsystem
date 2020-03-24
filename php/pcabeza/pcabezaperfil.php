@@ -1,5 +1,5 @@
 <?php
-include('php\consultas\consultadeuda.php');
+include('php\consultas\consultacliente.php');
 
 ?>
 

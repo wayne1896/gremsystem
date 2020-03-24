@@ -1,5 +1,7 @@
 <?php 
  include('php\pcabeza\pcabezaperfil.php');
+ session_start();
+
 
 ?>
 
@@ -11,22 +13,36 @@
             <div class="container">    
                   <div class="row">
                       <div class="panel panel-default">
-                      <div class="panel-heading">  <h4 >Perfil</h4></div>
+                      <div class="panel-heading">  <h4 >Perfil <?php echo $_SESSION['User'];?></h4></div>
                        <div class="panel-body">
                       <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
                        <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive"> 
-                     
-                 
+
                       </div>
-                      <div class="panel-body" style="margin-left: 60px">
-    	<form action="php\socio_registro.php?accion=UDT" method="POST">
+					  <div class="panel-body" style="margin-left: 60px">
+
+					  <div class="row">
+    			<div class="col-md-4 col-md-offset-2 col-sm-4
+    			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
+    			col-xs-offset-0">
+    			<div class="form-group">
+					<label class="control-label">Codigo<span style="color:red">*</span></label>
+					
+    				<input type="text" name="codigo" required="" placeholder="Nombre y Apellido" class="form-control" required=""
+						readonly="" value="<?php echo $nombre ?>">
+    				
+    			</div>
+    			</div>
+    
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Nombre<span style="color:red">*</span></label>
-    				<input type="text" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php echo $row['nombreclien'] ?>">
+    				<input type="text" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php $nombre = $_GET['nombreclien'];
+
+echo$nombre;?>">
     				
     			</div>
     			</div>

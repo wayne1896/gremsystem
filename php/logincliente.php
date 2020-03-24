@@ -1,4 +1,6 @@
-<?php include'logcab4.php'; ?>
+<?php include'logcab4.php'; 
+
+?>
 
 
 
