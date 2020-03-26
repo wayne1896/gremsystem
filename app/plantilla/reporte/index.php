@@ -4,9 +4,14 @@
  
   $plantilla = '<body>
     <header class="clearfix">
-      <div id="logo">
-        <img src="img/logo.png">
+     
+      <div class="icon">
+          <img src="C:\xampp\htdocs\Gremsystem\app\plantilla\img\Logo2.jpg">
       </div>
+      <div class="nombre">
+          GremSystem
+      </div>
+ 
       <h1>REPORTE GENERAL</h1>
       <div id="company" class="clearfix">
         <div>GremSystem Inc.. </div>
@@ -14,14 +19,7 @@
         <div>(809)966-4550</div>
         <div><a href="mailto:company@example.com">pj.olivero12@gmail.com</a></div>
       </div>
-      <div id="project">
-        <div><span>PROJECTO</span> Gestor de Gremios o funerarias</div>
-        <div><span>CLIENTE</span> Carlos Jose</div>
-        <div><span>DIRECCION</span> </div>
-        <div><span>EMAIL</span> <a href="mailto:john@example.com">'. $cliente["apellidoclien"].'</a></div>
-        <div><span>FECHA</span> </div>
-        <div><span>DUE DATE</span></div>
-      </div>
+  
     </header>
     <main>
       <table>
@@ -53,7 +51,7 @@
   }
   $plantilla .='<tr>
   <td colspan="4" class="grand total">TOTAL GENERAL</td>
-  <td class="grand total">$'. $cliente["deuda"].'</td>
+  <td class="grand total">$'.( $cliente["deuda"] + $cliente["deuda"]).'</td>
 </tr>';
 
 
@@ -61,12 +59,14 @@
       $plantilla .=  '</tbody>
       </table>
       <div id="notices">
-        <div>NOTICE:</div>
+        <div>¡AVISO!</div>
         <div class="notice">Por favor pagar antes de la fecha limite (15 dias), para evitar cargos extras.</div>
       </div>
-    </main>
+    </main>   
+       
+  
     <footer>
-      Invoice was created on a computer and is valid without the signature and seal.
+    Copyright © GremSystem 2020.
     </footer>
     </body>';
 

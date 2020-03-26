@@ -6,4 +6,5 @@
 	 die(' Fallo al conectar a MySQL'.mysqli_error($con));
  }
 
+ 
 ?>

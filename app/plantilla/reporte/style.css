@@ -41,9 +41,9 @@ div.icon{
 
 div.nombre{
  
-  text-align: center;
+  text-align: left;
   height: 30;
-  font-size: 40;
+  font-size: 15;
   color: #5D6975;
 }
 h1 {

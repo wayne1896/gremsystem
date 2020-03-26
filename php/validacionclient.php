@@ -3,6 +3,8 @@ require_once('consultas\consultalogin.php');
 session_start();
 $username=$_POST['usuario'];
 $clave=$_POST['clave'];
+$id2 = $_POST['usuario'];
+
 
 
     if(isset($_POST['logincliente']))
@@ -18,11 +20,13 @@ $clave=$_POST['clave'];
 
             if(mysqli_fetch_assoc($result))
             {
-                $nombre = $_GET['nombreclien'];
+                
 
                 
                 $_SESSION['User']=$_POST['usuario'];
-                header("location: ../perfil.php");
+              
+                header("location: ../perfil.php?id2=$id2");
+                exit();
 
             }
             else

@@ -13,5 +13,12 @@
 		return $result=$mysqli->query($sql); 
 	}	
 
+	function extraersocio2UDT($id2){
+		include('php\conexion.php');	
+		$sql="SELECT * FROM socio s JOIN deuda d ON (s.id_clien=d.id_clien)
+		JOIN empleado e ON (s.id_empleado=e.id_empleado) where s.cedulaclien='$id2'";
+		return $result=$mysqli->query($sql); 
+	}	
+
 
 ?>

@@ -22,4 +22,4 @@ $mpdf->writeHtml($css, \Mpdf\HTMLParserMode::HEADER_CSS);
 $mpdf->writeHtml($plantilla, \Mpdf\HTMLParserMode::HTML_BODY);
 
 
-$mpdf->Output();
+$mpdf->Output("reporte_gremsystem.pdf", "i");

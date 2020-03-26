@@ -1,7 +1,10 @@
 <?php 
  include('php\pcabeza\pcabezaperfil.php');
  session_start();
-
+ $id2 = $_GET['id2'];
+ if(isset($_GET['id2'])){
+	$query= extraersocio2UDT($_GET['id2']);
+ $row=$query->fetch_assoc();}
 
 ?>
 
@@ -22,17 +25,7 @@
 					  <div class="panel-body" style="margin-left: 60px">
 
 					  <div class="row">
-    			<div class="col-md-4 col-md-offset-2 col-sm-4
-    			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
-    			col-xs-offset-0">
-    			<div class="form-group">
-					<label class="control-label">Codigo<span style="color:red">*</span></label>
-					
-    				<input type="text" name="codigo" required="" placeholder="Nombre y Apellido" class="form-control" required=""
-						readonly="" value="<?php echo $nombre ?>">
-    				
-    			</div>
-    			</div>
+    	
     
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
@@ -40,12 +33,11 @@
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Nombre<span style="color:red">*</span></label>
-    				<input type="text" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php $nombre = $_GET['nombreclien'];
-
-echo$nombre;?>">
+    				<input type="text" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php echo $row['nombreclien'] ?>">
     				
     			</div>
-    			</div>
+				</div>
+				
 					<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Apellido<span style="color:red">*</span></label>
@@ -56,8 +48,8 @@ echo$nombre;?>">
 				
 				
 
-				<div class="col-md-5 col-md-offset-2 col-sm-4
-    			col-sm-offset-2 col-lg-5 col-Ig-offset-2 col-xs-12
+				<div class="col-md-4 col-md-offset-2 col-sm-4
+    			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Direccion <span style="color:red">*</span></label>
@@ -76,17 +68,18 @@ echo$nombre;?>">
 				</div>
 				</div>
 		
-          <div class="row">
-    			<div class="col-md-4 col-md-offset-2 col-sm-4
+				<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
+    		
     				<label class="control-label">Telefono <span style="color:red">*</span></label>
     				<input type="telefono" name="telefono" required="" placeholder="Telefono" class="form-control"
                     value="<?php echo $row['telefonoclien']?>">
     				
     			</div>
     			</div>
+				
 
     			<div class="col-md-4 col-md-offset-0 col-sm-4
 	    			col-sm-offset-0 col-lg-4 col-Ig-offset-0 col-xs-12
@@ -97,6 +90,17 @@ echo$nombre;?>">
                     value="<?php echo $row['fechaclien']?>">
     				
     			  </div>
+    			</div>
+				<div class="col-md-4 col-md-offset-2 col-sm-4
+    			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
+    			col-xs-offset-0">
+    			<div class="form-group">
+    		
+    				<label class="control-label">Deuda Pendiente <span style="color:red">*</span></label>
+    				<input type="telefono" name="deuda" required="" placeholder="Deuda Pendiente" class="form-control"
+                    value=$<?php echo $row['deuda']?>>
+    				
+    			</div>
     			</div>
           </div>
 
