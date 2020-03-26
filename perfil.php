@@ -6,6 +6,8 @@
 	$query= extraersocio2UDT($_GET['id2']);
  $row=$query->fetch_assoc();}
 
+ 
+
 ?>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -33,7 +35,7 @@
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Nombre<span style="color:red">*</span></label>
-    				<input type="text" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php echo $row['nombreclien'] ?>">
+    				<input type="text" readonly="" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php echo $row['nombreclien'] ?>">
     				
     			</div>
 				</div>
@@ -41,7 +43,7 @@
 					<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Apellido<span style="color:red">*</span></label>
-						<input type="text" id="apellido" name="apellido" required="" placeholder="Apellido" class="form-control"
+						<input type="text" readonly="" id="apellido" name="apellido" required="" placeholder="Apellido" class="form-control"
 						value="<?php echo $row['apellidoclien']?>">
 					</div>
 				</div>
@@ -53,7 +55,7 @@
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Direccion <span style="color:red">*</span></label>
-    				<input type="text" name="direccion" required="" placeholder="Direccion" class="form-control"
+    				<input type="text" readonly="" name="direccion" required="" placeholder="Direccion" class="form-control"
                     value="<?php echo $row['direccionclien']?>">
     				
     			</div>
@@ -62,7 +64,7 @@
 					<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Cedula<span style="color:red">*</span></label>
-						<input type="text" id="cedula" name="cedula" required="" placeholder="Cedula de Identidad" class="form-control"
+						<input type="text" id="cedula" readonly="" name="cedula" required="" placeholder="Cedula de Identidad" class="form-control"
 						value="<?php echo $row['cedulaclien']?>">
 					</div>
 				</div>
@@ -74,7 +76,7 @@
     			<div class="form-group">
     		
     				<label class="control-label">Telefono <span style="color:red">*</span></label>
-    				<input type="telefono" name="telefono" required="" placeholder="Telefono" class="form-control"
+    				<input type="telefono" name="telefono" readonly="" required="" placeholder="Telefono" class="form-control"
                     value="<?php echo $row['telefonoclien']?>">
     				
     			</div>
@@ -86,7 +88,7 @@
 	    			col-xs-offset-0">
     			  <div class="form-group">
     				<label class="control-label">Fecha de nacimiento <span style="color:red">*</span></label>
-    				<input type="date" name="fecha" required=""  class="form-control" 
+    				<input type="date" readonly="" name="fecha" required=""  class="form-control" 
                     value="<?php echo $row['fechaclien']?>">
     				
     			  </div>
@@ -97,13 +99,15 @@
     			<div class="form-group">
     		
     				<label class="control-label">Deuda Pendiente <span style="color:red">*</span></label>
-    				<input type="telefono" name="deuda" required="" placeholder="Deuda Pendiente" class="form-control"
+    				<input type="telefono" name="deuda" readonly="" required="" placeholder="Deuda Pendiente" class="form-control"
                     value=$<?php echo $row['deuda']?>>
     				
     			</div>
     			</div>
           </div>
-
+		  <?php
+		 echo "<a href='perfil_actualizar.php?id2=$id2' class='btn btn-primary'>Editar</a>";
+			?>
     		</div>
     		</div>
                 </div>
