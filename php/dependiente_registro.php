@@ -8,23 +8,17 @@
 	if ($i=='INS') {
 		$msj='';
 		$nombre=$_POST['nombre'];
-		$apellido=$_POST['apellido'];
-		$direccion=$_POST['direccion'];
-		$cedula=$_POST['cedula'];
+		$parentesco=$_POST['parentesco'];
 		$fecha=$_POST['fecha'];
-		$telefono=$_POST['telefono'];
+		$estado=$_POST['estado'];
 		$sql="
-		INSERT INTO `dependientesclien`(`nombredependien`, `parentesco`,`fechanacimientodepen`, `esadodependien`) 
+		INSERT INTO `dependientesclien`(`nombredependien`, `parentesco`,`fechanacimientodepen`, `estadodependien`) 
 		 
 		 VALUES (
 		'$nombre',
-		'$apellido',
-		'$direccion',
-		'$cedula',
+		'$parentesco',
 		'$fecha',
-		'$telefono',
-		'A'
-		
+		'$estado'
 		)
 		";
 		if ($mysqli->query($sql)){
@@ -34,29 +28,23 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../socio.php?s=".$msj);
+		header("Location: ../dependiente.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';
 		$codigo=$_POST['codigo'];
 		$nombre=$_POST['nombre'];
-		$apellido=$_POST['apellido'];
-		$direccion=$_POST['direccion'];
-		$cedula=$_POST['cedula'];
+		$parentesco=$_POST['parentesco'];
 		$fecha=$_POST['fecha'];
-		$telefono=$_POST['telefono'];
 		$estado=$_POST['estado'];
 		$sql="
-		UPDATE `socio` SET 
-		`nombreclien`='$nombre',
-		`apellidoclien`='$apellido',
-		`direccionclien`='$direccion',
-		`cedulaclien`='$cedula',
-		`fechaclien`='$fecha',
-		`telefonoclien`='$telefono',
-		`estadoclien`='$estado'
+		UPDATE `dependientesclien` SET 
+		`nombredependien`='$nombre',
+		`parentesco`='$parentesco',
+		`fechanacimientodepen`='$fecha',
+		`estadodependien`='$estado'
 		WHERE 
-		id_clien ='$codigo'
+		id_socio ='$codigo'
 		";
 		if ($mysqli->query($sql)){
 			$msj='successudt';
@@ -65,7 +53,7 @@
 			$msj='errorudt';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../socio.php?s=".$msj);
+		header("Location: ../dependiente.php?s=".$msj);
 
 	}
 	if ($i=='DLT'){
@@ -86,6 +74,6 @@
 			$msj='errordlt';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../socio.php?s=".$msj);
+		header("Location: ../dependiente.php?s=".$msj);
 	}
 ?>

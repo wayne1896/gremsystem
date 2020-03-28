@@ -25,9 +25,11 @@ $resultado = $mysqli->query($consulta);
         <div><a href="mailto:company@example.com">pj.olivero12@gmail.com</a></div>
       </div>
       <div id="project">
+
+      
         <div><span>PROJECTO</span> Gestor de Gremios o funerarias</div>
-        <div><span>CLIENTE</span> '. $consulta["nombreclien"] .'</div>
-        <div><span>DIRECCION</span>'. $consulta["id_clien"] .' </div>
+        <div><span>CLIENTE</span> '.$consulta["nombreclien"] .'</div>
+        <div><span>DIRECCION</span>'.$consulta["id_clien"] .' </div>
         <div><span>EMAIL</span> <a href="mailto:john@example.com">'. $cliente["apellidoclien"].'</a></div>
         <div><span>FECHA</span> </div>
         <div><span>DUE DATE</span></div>
