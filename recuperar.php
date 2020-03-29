@@ -24,7 +24,7 @@
 <div class="text-center col-lg-4 col-sm-offset-4"><div class="panel-heading">
 		   		<h1 style="text-align:center;">Recuperar Contraseña</h1> 
 </div>
-                                          <form action="validacion.php" method="post">
+                                          <form action="validacion.php" method="POST">
                             <input type="text" name="usuario" placeholder=" Usuario" class="form-control mb-3">
                             <input type="text" name="preg1" placeholder=" Pregunta 1" class="form-control mb-3">
                             <input type="text" name="preg2" placeholder=" Pregunta 2" class="form-control mb-3">

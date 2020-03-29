@@ -16,22 +16,22 @@
 		$telefono=$_POST['telefono'];
 		$id_empleado=$_POST['id_empleado'];
 		$id_plan=$_POST['idplan'];
-		$id_deuda=$_POST['id_clien'];
-		$clave=$_POST[''];
-		$correo=$_POST[''];
+        $id_deuda=$_POST['id_clien'];
+        $clave=$_POST[''];
+        $correo=$_POST[''];
+        
 		
 		$sql="
-		INSERT INTO `socio`( `nombreclien`, `apellidoclien`, `direccionclien`, `claveclien`, `cedulaclien`, 
-		`fechaclien`,`telefonoclien`, `correoclient`, `estadoclien`, `id_plan`, `id_empleado`) 
+		INSERT INTO `socio`( `nombreclien`, `apellidoclien`,`direccionclien`, `claveclien`, `cedulaclien`, 
+		`fechaclien`,`telefonoclien`,`correoclient`, `estadoclien`, `id_plan`, `id_empleado`) 
 		VALUES (
 	   '$nombre',
 	   '$apellido',
-	   '$direccion',
-	   '$clave',
+       '$direccion',
+       '$clave'
 	   '$cedula',
 	   '$fecha',
 	   '$telefono',
-	   '$correo',
 	   'A',
 	   '$id_plan',
 	   '$id_empleado'

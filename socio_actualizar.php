@@ -17,7 +17,7 @@
 
   <div class="panel panel-default" style="margin-top: 10px">
   	<div class="panel-heading">
-  		<h1 align="center">Actualizar Empleado</h1>
+  		<h1 align="center">Actualizar Cliente</h1>
     </div>
     <div class="panel-body" style="margin-left: 60px">
     	<form action="php\socio_registro.php?accion=UDT" method="POST">
@@ -119,8 +119,13 @@
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-    			      <a href="propietario_mant.php" class="btn btn-danger">Atras</a>
+    			      <a href="socio.php" class="btn btn-danger">Atras</a>
     			      <input type="submit" value="Guardar" class="btn btn-success"> 
+					  <div><form action="php\generaldeuda.php?accion=INS" method="POST">
+					  <input type="submit" value="Activar en Factura" class="btn btn-secondary">
+					  </div>
+					 
+					  
     		      </div>
     		    </div>	
     		</div>

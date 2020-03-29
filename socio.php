@@ -13,6 +13,14 @@
 				$mensaje='Imposible almacenar el registro';
 				$color='danger';
 				break;
+				case 'successact':
+					$mensaje='Se Activo el cliente';
+					$color='success';
+					break;
+				case 'erroract':
+					$mensaje='El CLiente ya esta activado';
+					$color='danger';
+					break;
 			case 'successudt':
 				$mensaje='Registro actualizado correctamente';
 				$color='success';
@@ -38,10 +46,15 @@
 
 	
 
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <!-- jQuery library -->
 
 
 <!-- Latest minified bootstrap js -->
+
+</head>
 
 
 <div class="panel panel-default" style="margin-top: 10px"> 		
@@ -62,6 +75,7 @@
 			 				<th>Nombre</th>
 							 <th>Apellido</th>
 			 				<th>Cedula</th>
+							 <th>Plan</th>
 							 <th>Telefono</th>
 							 <th>Fecha de Nacimiento</th> 
 							 <th>Direccion</th>
@@ -71,22 +85,25 @@
 			 		</thead>
 			 		<tbody>
 			 			<?php
-			 			$query=lista_cursos();
+						 $query=lista_cursos();
+						 
 		 				while ( $row= $query->fetch_assoc() ) {
-		 					echo" 
+		 					echo"
 								<tr>
+								
 					 				<td>".$row['id_clien']."</td>
 					 				<td>".$row['nombreclien']."</td>
 					 				<td>".$row['apellidoclien']."</td>
 									 <td>".$row['cedulaclien']."</td>
-								
+									<td>".$row['nombre_plan']."</td>
 									 <td>".$row['telefonoclien']."</td> 
 									 <td>".$row['fechaclien']."</td> 
 									 <td>".$row['direccionclien']."</td>
 									 <td>".$row['estadoclien']."</td>
-					 				<td>
+									 <td>
+									 
 										 <a href='socio_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Editar</a>
-										 <a href='dependiente.php?id=".$row['id_clien']."' class='btn btn-info'>Ver Dependientes</a>
+										 <a href='dependiente.php?id=".$row['id_clien']."' class='btn btn-info'>Dependientes</a>
 					 					<a href='php\socio_registro.php?accion=DLT&id=".$row['id_clien']."' class='btn btn-danger'>Eliminar</a>
 					 				</td>
 					 			</tr>

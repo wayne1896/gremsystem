@@ -1,6 +1,7 @@
 <?php 
 require_once('php\consultas\consultalogin.php');
 session_start();
+$username=$_POST['usuario'];
     if(isset($_POST['confirmar']))
     {
        if(empty($_POST['usuario']))
@@ -16,7 +17,8 @@ session_start();
             if(mysqli_fetch_assoc($result))
             {
                 $_SESSION['User']=$_POST['usuario'];
-                header("location: pre_recuperacion.php");
+              
+                             header("location: pre_recuperacion.php?id=$username");
             }
             else
             {
