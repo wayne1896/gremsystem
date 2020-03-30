@@ -36,11 +36,12 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location:../registrar.php?s=".$msj);
+		header("Location: ../login.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';
 		$codigo=$_POST['codigo'];
+		$nombre=$_POST['nombreuser'];
 		$clave=$_POST['claveuser'];
 		
 		$sql="
@@ -58,7 +59,7 @@
 			$msj='errorudt';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: login.php?s=".$msj);
+		header("Location: ../login.php?s=".$msj);
 
 	}
 	if ($i=='DLT'){

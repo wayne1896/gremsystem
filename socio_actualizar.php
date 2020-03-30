@@ -123,22 +123,14 @@
 				
           </div>
 		  <div class="row">
-<<<<<<< HEAD
 			<div class="col-md-3 col-md-offset-4 col-sm-5 col-sm-offset-4 col-lg-4 col-lg-offset-2 col-xs-12 col-xs-offset-0">
-=======
-			<div class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-3 col-lg-offset-2 col-xs-12 col-xs-offset-0">
->>>>>>> 083bfa36f2e98f316968d551dff93c92b98190e6
 					<div class="form-group">
 						<label class="control-label">Correo<span style="color:red">*</span></label>
 						<input type="email" id="correo" name="correo" required="" placeholder="Correo Electronico" class="form-control"
 						value="<?php echo $row['correoclient']?>">
 					</div>
 				</div>
-<<<<<<< HEAD
 				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
-=======
-				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-xs-12 col-xs-offset-0">
->>>>>>> 083bfa36f2e98f316968d551dff93c92b98190e6
 					<div class="form-group">
 						<label class="control-label">Clave<span style="color:red">*</span></label>
 						<input type="text" id="clave" name="clave" required="" placeholder="Contraseña" class="form-control"
