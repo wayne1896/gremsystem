@@ -27,8 +27,7 @@
 					  <div class="panel-body" style="margin-left: 60px">
 
 					  <div class="row">
-    	
-    
+						
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
@@ -66,6 +65,7 @@
 						<label class="control-label">Cedula<span style="color:red">*</span></label>
 						<input type="text" id="cedula" readonly="" name="cedula" required="" placeholder="Cedula de Identidad" class="form-control"
 						value="<?php echo $row['cedulaclien']?>">
+
 					</div>
 				</div>
 				</div>
@@ -100,13 +100,17 @@
     		
     				<label class="control-label">Deuda Pendiente <span style="color:red">*</span></label>
     				<input type="telefono" name="deuda" readonly="" required="" placeholder="Deuda Pendiente" class="form-control"
-                    value=$<?php echo $row['deuda']?>>
+                    value="<?php echo $row['deuda']?>">
     				
     			</div>
     			</div>
           </div>
 		  <?php
 		 echo "<a href='perfil_actualizar.php?id2=$id2' class='btn btn-primary'>Editar</a>";
+		 echo "       "; 
+	 		$id=$row['id_clien'];
+		 echo "<a href='dependienteperfil.php?id=$id' class='btn btn-secondary'>Dependientes</a>";
+		
 			?>
     		</div>
     		</div>

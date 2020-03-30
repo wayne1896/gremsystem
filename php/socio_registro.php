@@ -17,8 +17,8 @@
 		$id_empleado=$_POST['id_empleado'];
 		$id_plan=$_POST['idplan'];
 		$id_deuda=$_POST['id_clien'];
-		$clave=$_POST[''];
-		$correo=$_POST[''];
+		$clave=$_POST['clave'];
+		$correo=$_POST['correo'];
 		
 		$sql="
 		INSERT INTO `socio`( `nombreclien`, `apellidoclien`, `direccionclien`, `claveclien`, `cedulaclien`, 
@@ -57,6 +57,9 @@
 		$fecha=$_POST['fecha'];
 		$telefono=$_POST['telefono'];
 		$estado=$_POST['estado'];
+		$clave=$_POST['clave'];
+		$correo=$_POST['correo'];
+
 		$sql="
 		UPDATE `socio` SET 
 		`nombreclien`='$nombre',
@@ -65,21 +68,14 @@
 		`cedulaclien`='$cedula',
 		`fechaclien`='$fecha',
 		`telefonoclien`='$telefono',
-		`estadoclien`='$estado'
+		`estadoclien`='$estado',
+		`claveclien`='$clave',
+		`correoclient`='$correo'
+		
 		WHERE 
 		id_clien ='$codigo'
 		";
 		
-		$sql="
-		INSERT INTO `deuda`( `deuda`, `fecha`, `estado`, `id_clien`)
-		 
-		 VALUES (
-		'0',
-		'$fecha',
-		'A',
-		'$codigo'
-		)
-		";
 
 		if ($mysqli->query($sql)){
 			$msj='successudt';

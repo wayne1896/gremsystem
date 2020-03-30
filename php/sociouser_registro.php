@@ -17,8 +17,8 @@
 		$id_empleado=$_POST['id_empleado'];
 		$id_plan=$_POST['idplan'];
         $id_deuda=$_POST['id_clien'];
-        $clave=$_POST[''];
-        $correo=$_POST[''];
+		$clave=$_POST['clave'];
+		$correo=$_POST['correo'];
         
 		
 		$sql="
@@ -45,7 +45,7 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../socio.php?s=".$msj);
+		header("Location: /logincliente.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';
@@ -57,6 +57,8 @@
 		$fecha=$_POST['fecha'];
 		$telefono=$_POST['telefono'];
 		$estado=$_POST['estado'];
+		$clave=$_POST['clave'];
+		$correo=$_POST['correo'];
 		$sql="
 		UPDATE `socio` SET 
 		`nombreclien`='$nombre',
@@ -65,7 +67,9 @@
 		`cedulaclien`='$cedula',
 		`fechaclien`='$fecha',
 		`telefonoclien`='$telefono',
-		`estadoclien`='$estado'
+		`estadoclien`='$estado',
+		`claveclien`='$clave',
+		`correoclient`='$correo'
 		WHERE 
 		id_clien ='$codigo'
 		";

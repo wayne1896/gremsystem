@@ -1,5 +1,7 @@
-<?php	
-	include('php/pcabeza\pcabezacliente.php');		
+	<?php
+			include('php\pcabeza\pcabezaperfildependiente.php');		
+			session_start();
+			$id= $_GET['id'];
 
 	$mensaje='';
 	$color='';
@@ -13,14 +15,6 @@
 				$mensaje='Imposible almacenar el registro';
 				$color='danger';
 				break;
-				case 'successact':
-					$mensaje='Se Activo el cliente';
-					$color='success';
-					break;
-				case 'erroract':
-					$mensaje='El Cliente ya esta activado';
-					$color='danger';
-					break;
 			case 'successudt':
 				$mensaje='Registro actualizado correctamente';
 				$color='success';
@@ -42,68 +36,52 @@
 	if (!empty($mensaje) and !empty($color)) {
 		echo '<div class="alert alert-'.$color.'" role="alert">'.$mensaje.'</div>';
 	}
-?>
-
 	
-
+?>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 <!-- Latest minified bootstrap js -->
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-
 <div class="panel panel-default" style="margin-top: 10px"> 		
 			<div class="panel-heading">
-		   		<h1 style="text-align:center;">Socio</h1> 
+		   		<h1 style="text-align:center;">Dependientes</h1> 
 				   			
 			</div>
-			<p>
-					<a href="socio_nuevo.php" class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>
-				</p>
-						
+			<div class="panel-body"style="margin-left: 10px">
+				<p>
+					<a href="dependiente_nuevoperfil.php?id=$id" class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>
+				</p>	
 				
-					
 	 			<table class="table table-striped" style="text-align: center;">
 			 		<thead>
 			 			<tr>
 			 				<th>ID</th>
 			 				<th>Nombre</th>
-							 <th>Apellido</th>
-			 				<th>Cedula</th>
-							 <th>Plan</th>
-							 <th>Telefono</th>
+							 <th>Parentesco</th>
 							 <th>Fecha de Nacimiento</th> 
-							 <th>Direccion</th>
 			 				<th>Estado</th> 				
 			 				<th></th>
 			 			</tr>
 			 		</thead>
 			 		<tbody>
 			 			<?php
-						 $query=lista_cursos();
-						 
+			 			$query=lista_cursos();
 		 				while ( $row= $query->fetch_assoc() ) {
-		 					echo"
+		 					echo" 
 								<tr>
-								
-					 				<td>".$row['id_clien']."</td>
-					 				<td>".$row['nombreclien']."</td>
-					 				<td>".$row['apellidoclien']."</td>
-									 <td>".$row['cedulaclien']."</td>
-									<td>".$row['nombre_plan']."</td>
-									 <td>".$row['telefonoclien']."</td> 
-									 <td>".$row['fechaclien']."</td> 
-									 <td>".$row['direccionclien']."</td>
-									 <td>".$row['estadoclien']."</td>
-									 <td>
-									 
-										 <a href='socio_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Editar</a>
-										 <a href='dependiente.php?id=".$row['id_clien']."' class='btn btn-info'>Dependientes</a>
+					 				<td>".$row['id_socio']."</td>
+					 				<td>".$row['nombredependien']."</td>
+					 				<td>".$row['parentesco']."</td>
+									 <td>".$row['fechanacimientodepen']."</td> 
+									 <td>".$row['estadodependien']."</td>
+					 				<td>
+										 <a href='dependiente_actualizar.php?id=".$row['id_socio']."' class='btn btn-primary'>Editar</a>
+										
 					 					<a href='php\socio_registro.php?accion=DLT&id=".$row['id_clien']."' class='btn btn-danger'>Eliminar</a>
 					 				</td>
 					 			</tr>
@@ -115,6 +93,7 @@
 			</div>
 		</div>
 
-<?php	
-	include('php/ppie_menu.php');		
+
+			<?php	
+	include('php/ppie.php');		
 ?>

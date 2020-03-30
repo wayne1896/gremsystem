@@ -1,4 +1,5 @@
-<?php 
+  <?php 
+   session_start();
 	include'conexion.php';	
 	$i='';
 	if(isset($_GET['accion'])){
@@ -7,8 +8,7 @@
 
 	if ($i=='INS') {
         $msj='';
-        $codigo1=$_POST['codigo'];
-        $codigo=$codigo1;
+        $codigo=$_POST['codigo'];
         $fecha=$_POST['fecha'];
 	
 		
