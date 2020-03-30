@@ -1,5 +1,7 @@
-<?php	
-	include('php/pcabeza\pcabezadeuda.php');		
+	<?php
+			include('php\pcabeza\pcabezaperfildependiente.php');		
+			session_start();
+			$id= $_GET['id'];
 
 	$mensaje='';
 	$color='';
@@ -14,11 +16,11 @@
 				$color='danger';
 				break;
 			case 'successudt':
-				$mensaje='Pago aplicado correctamente';
+				$mensaje='Registro actualizado correctamente';
 				$color='success';
 				break;
 			case 'errorudt':
-				$mensaje='Imposible aplicar el pago';
+				$mensaje='Imposible actualizar el registro';
 				$color='danger';
 				break;
 			case 'successdlt':
@@ -34,6 +36,7 @@
 	if (!empty($mensaje) and !empty($color)) {
 		echo '<div class="alert alert-'.$color.'" role="alert">'.$mensaje.'</div>';
 	}
+	
 ?>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -44,31 +47,24 @@
 <!-- Latest minified bootstrap js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-	 	<div class="panel panel-default" style="margin-top: 10px"> 		
+<div class="panel panel-default" style="margin-top: 10px"> 		
 			<div class="panel-heading">
-		   		<h1 style="text-align:center;">Pagos Nuevos</h1> 
+		   		<h1 style="text-align:center;">Dependientes</h1> 
 				   			
 			</div>
-			<div class="panel-body">
+			<div class="panel-body"style="margin-left: 10px">
 				<p>
-					<a href="empleado_nuevo.php" class="btn btn-success pull-left"style="margin-left: 10px">Aplicar</a>
-				</p>
-				<p>
-					<a href="reporte.php" class="btn btn-success pull-left" target="_blank"style="margin-left: 10px">Imprimir</a>
+					<a href="dependiente_nuevoperfil.php?id=$id" class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>
 				</p>	
-			
-			
+				
 	 			<table class="table table-striped" style="text-align: center;">
 			 		<thead>
 			 			<tr>
 			 				<th>ID</th>
 			 				<th>Nombre</th>
-							 <th>Apellido</th>
-			 				<th>Deuda</th>
-							 <th>Cobrador</th>
-			 				<th>Estado</th> 	
-                             <th>Nuevo Pago</th> 				
+							 <th>Parentesco</th>
+							 <th>Fecha de Nacimiento</th> 
+			 				<th>Estado</th> 				
 			 				<th></th>
 			 			</tr>
 			 		</thead>
@@ -78,15 +74,16 @@
 		 				while ( $row= $query->fetch_assoc() ) {
 		 					echo" 
 								<tr>
-								<td>".$row['id_clien']."</td>
-								<td>".$row['nombreclien']."</td>
-								<td>".$row['apellidoclien']."</td>
-								<td>$".$row['deuda']."</td>
-								<td>".$row['nombreemple']."</td> 
-                                <td>".$row['estadoclien']."</td>
-                                <td><input></td>
-                               
-					 			
+					 				<td>".$row['id_socio']."</td>
+					 				<td>".$row['nombredependien']."</td>
+					 				<td>".$row['parentesco']."</td>
+									 <td>".$row['fechanacimientodepen']."</td> 
+									 <td>".$row['estadodependien']."</td>
+					 				<td>
+										 <a href='dependiente_actualizar.php?id=".$row['id_socio']."' class='btn btn-primary'>Editar</a>
+										
+					 					<a href='php\socio_registro.php?accion=DLT&id=".$row['id_clien']."' class='btn btn-danger'>Eliminar</a>
+					 				</td>
 					 			</tr>
 		 					";
 		 				}
@@ -96,6 +93,7 @@
 			</div>
 		</div>
 
-<?php	
-	include('php/ppie_menu.php');		
+
+			<?php	
+include('php/ppie_menu.php');		
 ?>

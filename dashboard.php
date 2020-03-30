@@ -34,5 +34,5 @@ var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
 
 <?php  
 
- include 'php/ppie.php';
+include('php/ppie_menu.php');
 ?>

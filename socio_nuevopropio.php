@@ -1,11 +1,11 @@
 <?php 
- include('php\pcabeza\pcabezacliente.php');	
+  include('php\pcabeza\pcabezaperfil.php');
  require_once ("config/db.php");
  require_once ("config/conexion.php");
 ?>
 <div class="panel panel-default" style="margin-top: 10px"> 		
 	<div class="panel-heading">
-		<h1 align="center">Nuevo Socio</h1> 			
+		<h1 align="center">Registrate</h1> 			
 	</div>
 
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -13,7 +13,7 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 	<div class="panel-body"style="margin-left: 60px">
-		<form action="php\socio_registro.php?accion=INS" method="POST">
+		<form action="php\sociouser_registro.php?accion=INS" method="POST">
 			<div class="row">
 			<div class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-3 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">

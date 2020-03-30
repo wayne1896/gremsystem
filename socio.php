@@ -18,7 +18,7 @@
 					$color='success';
 					break;
 				case 'erroract':
-					$mensaje='El CLiente ya esta activado';
+					$mensaje='El Cliente ya esta activado';
 					$color='danger';
 					break;
 			case 'successudt':
