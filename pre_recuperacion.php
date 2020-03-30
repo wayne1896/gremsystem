@@ -1,5 +1,6 @@
 <?php include'php\logcab2.php';
-  if(isset($_GET['id_user'])){
+session_start();
+  if(isset($_GET['id'])){
 	$query=extraerusuariosUDT($_GET['id']);
 	$row=$query->fetch_assoc();
 
@@ -52,7 +53,7 @@
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Contraseña<span style="color:red">*</span></label>
-					<input type="password" name="claveuser" placeholder="Contraseña">
+					<input type="password" name="claveuser"required="" placeholder="Contraseña">
     				
     			</div>
     			</div>
@@ -62,7 +63,7 @@
 	    			col-xs-offset-0">
     			  <div class="form-group">
 				  <label class="control-label">Confirme Contraseña<span style="color:red">*</span></label>
-				  <input type="password" name="claveuser" placeholder="Contraseña">
+				  <input type="password" name="claveuser" placeholder="Contraseña" required="">
     				
     		
     		<div class="row">

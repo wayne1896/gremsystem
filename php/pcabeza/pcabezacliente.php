@@ -57,10 +57,9 @@ include('php\consultas\consultacliente.php');
         <li class="<?php echo $active_facturas;?>"><a href="menu.php"><i class='glyphicon glyphicon-home'></i><font color="" size="4"> Inicio </font></a></li>
         <li class="<?php echo $active_facturas;?>"><a href="facturacion.php"><i class='glyphicon glyphicon-align-justify'></i><font color="" size="4"> Facturas </font><span class="sr-only">(current)</span></a></li>
         <li class="<?php echo $active_productos;?>"><a href="inventario.php"><i class='glyphicon glyphicon-shopping-cart'></i><font color="" size="4"> Inventario</font></a></li>
-
     <li class="<?php echo $active_usuarios;?>"><a href="empleados.php"><i  class='glyphicon glyphicon-lock'></i><font color="" size="4"> Empleados</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href="deceso.php"><i  class='glyphicon glyphicon-briefcase'></i><font color="" size="4"> Decesos</font></a></li>
-    <li class="<?php echo $active_usuarios;?>"><a href="sucursal.php"><i  class='glyphicon glyphicon-phone-alt'></i><font color="" size="4"> Planes</font></a></li>
+    <li class="<?php echo $active_usuarios;?>"><a href="sucursal.php"><i  class='glyphicon glyphicon-phone-alt'></i><font color="" size="4"> Sucursal</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href=""><i  class='glyphicon glyphicon-plus-sign'></i><font color="" size="4"> Acerca de</font></a></li>
        </ul>
       <ul class="nav navbar-nav navbar-right">

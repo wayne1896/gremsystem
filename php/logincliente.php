@@ -1,4 +1,6 @@
-<?php include'logcab4.php'; ?>
+<?php include'logcab4.php'; 
+
+?>
 
 
 
@@ -40,7 +42,7 @@
                             <input type="text" name="usuario" placeholder=" Usuario" class="form-control mb-3">
                             <input type="password" name="clave" placeholder=" Contraseña" class="form-control mb-3">
                             <button class="btn btn-success mt-3 btn-lg btn-block" name="logincliente">Login</button>
-                            <a>No tienes una cuenta?</a><a href="../registrar.php">Aqui</a>
+                            <a>No tienes una cuenta?</a><a href="../socio_nuevopropio.php">Aqui</a>
                             
 
         

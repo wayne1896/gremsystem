@@ -56,7 +56,7 @@
 <div class="form-group" >
   <label class="control-label" class="col-lg-6 " width="250" for="selectbasic">Pregunta de seguridad 1<span style="color:red">*</span></label>
   <div>
-    <select id="pregunta1" name="menu" size="1" class="form-control" >
+    <select id="pregunta1" name="menu" size="pregunta1" class="form-control" >
       <option value="1">Donde naciste?</option>
       <option value="2">Cual es tu apodo?</option>
     </select>
@@ -114,5 +114,5 @@
      </div>
     </form>
     <?php	
-	include('php/ppie.php');		
+include('php/ppie_menu.php');		
 ?>

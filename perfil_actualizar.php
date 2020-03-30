@@ -1,11 +1,10 @@
 <?php
- session_start();
-  include('php\pcabeza\pcabezacliente.php');
-  if(isset($_GET['id'])){
-   	$query=extraersocioUDT($_GET['id']);
-    $row=$query->fetch_assoc();
-}
-  
+ include('php\pcabeza\pcabezaperfil.php');
+  $id2 = $_GET['id2'];
+  if(isset($_GET['id2'])){
+	 $query= extraersocio2UDT($_GET['id2']);
+  $row=$query->fetch_assoc();}
+
 ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -14,21 +13,14 @@
 
 <!-- Latest minified bootstrap js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<div><form action="php\generaldeuda.php?accion=INS" method="POST">
-<input type="text" name="codigo" required="" hidden= "true"placeholder="Nombre y Apellido" class="form-control" required=""
-						readonly="" value="<?php echo $row['id_clien'] ?>">
-					  <input type="submit" value="Activar en Factura" class="btn btn-secondary">
-					  </form>
-					  </div> 
 </head>
 
   <div class="panel panel-default" style="margin-top: 10px">
   	<div class="panel-heading">
-  		<h1 align="center">Actualizar Cliente</h1>
+  		<h1 align="center">Actualizar Perfil</h1>
     </div>
-	
     <div class="panel-body" style="margin-left: 60px">
-    	<form action="php\socio_registro.php?accion=UDT" method="POST">
+    	<form action="php\socio_registro2.php?accion=UDT" method="POST">
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
@@ -57,7 +49,6 @@
     			</div>
     			</div>
           </div>
-		  
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
@@ -91,8 +82,8 @@
         
 					<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
-						<label class="control-label">Cedula<span style="color:red">*</span></label>
-						<input type="text" id="cedula" name="cedula" required="" placeholder="Cedula de Identidad" class="form-control"
+						<label class="control-label">Cedula <span style="color:red">*</span></label>
+						<input type="text" id="cedula" readonly="" name="cedula" required="" placeholder="Cedula de Identidad" class="form-control"
 						value="<?php echo $row['cedulaclien']?>">
 					</div>
 				</div>
@@ -120,7 +111,6 @@
     				
     			  </div>
     			</div>
-				
           </div>
 		  <div class="row">
 			<div class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-3 col-lg-offset-2 col-xs-12 col-xs-offset-0">
@@ -139,20 +129,20 @@
 				</div>
 
     		</div>
+
+    		</div>
     		<div class="row">
     			<div class="col-md-8 col-md-offset-2 col-sm-8
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-    			      <a href="socio.php" class="btn btn-danger">Atras</a>
-    			      <input type="submit" value="Guardar" class="btn btn-success">  
-					
-    		      </div>  
-    		    </div>
-			
+    			      <a href="propietario_mant.php" class="btn btn-danger">Atras</a>
+    			      <input type="submit" value="Guardar" class="btn btn-success"> 
+    		      </div>
+    		    </div>	
+    		</div>
        </div>  
     </div>
-	</form>
 <?php  
 
  include 'php/ppie.php';

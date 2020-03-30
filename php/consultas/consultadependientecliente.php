@@ -4,9 +4,9 @@
 		$sql="SELECT * FROM socio s JOIN dependientesclien d ON (s.id_clien=d.id_clien)";
 		return $result=$mysqli->query($sql); 
 	}
-	function extraerempleadoUDT($id){
+	function extraerdependienteUDT($id){
 		include('php\conexion.php');	
-		$sql="SELECT * FROM socio s JOIN dependientesclien d ON (s.id_clien=d.id_clien) where $id'=d.id_clien";
+		$sql="SELECT * FROM socio s JOIN dependientesclien d ON (s.id_clien=d.id_clien) where d.id_socio='$id'";
 		return $result=$mysqli->query($sql); 
 	}	
 ?>

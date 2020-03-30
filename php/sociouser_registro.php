@@ -16,22 +16,22 @@
 		$telefono=$_POST['telefono'];
 		$id_empleado=$_POST['id_empleado'];
 		$id_plan=$_POST['idplan'];
-		$id_deuda=$_POST['id_clien'];
+        $id_deuda=$_POST['id_clien'];
 		$clave=$_POST['clave'];
 		$correo=$_POST['correo'];
+        
 		
 		$sql="
-		INSERT INTO `socio`( `nombreclien`, `apellidoclien`, `direccionclien`, `claveclien`, `cedulaclien`, 
-		`fechaclien`,`telefonoclien`, `correoclient`, `estadoclien`, `id_plan`, `id_empleado`) 
+		INSERT INTO `socio`( `nombreclien`, `apellidoclien`,`direccionclien`, `claveclien`, `cedulaclien`, 
+		`fechaclien`,`telefonoclien`,`correoclient`, `estadoclien`, `id_plan`, `id_empleado`) 
 		VALUES (
 	   '$nombre',
 	   '$apellido',
-	   '$direccion',
-	   '$clave',
+       '$direccion',
+       '$clave'
 	   '$cedula',
 	   '$fecha',
 	   '$telefono',
-	   '$correo',
 	   'A',
 	   '$id_plan',
 	   '$id_empleado'
@@ -45,7 +45,7 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../socio.php?s=".$msj);
+		header("Location: /logincliente.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';
@@ -59,7 +59,6 @@
 		$estado=$_POST['estado'];
 		$clave=$_POST['clave'];
 		$correo=$_POST['correo'];
-
 		$sql="
 		UPDATE `socio` SET 
 		`nombreclien`='$nombre',
@@ -71,11 +70,20 @@
 		`estadoclien`='$estado',
 		`claveclien`='$clave',
 		`correoclient`='$correo'
-		
 		WHERE 
 		id_clien ='$codigo'
 		";
 		
+		$sql="
+		INSERT INTO `deuda`( `deuda`, `fecha`, `estado`, `id_clien`)
+		 
+		 VALUES (
+		'0',
+		'$fecha',
+		'A',
+		'$codigo'
+		)
+		";
 
 		if ($mysqli->query($sql)){
 			$msj='successudt';

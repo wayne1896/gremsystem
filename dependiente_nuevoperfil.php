@@ -1,12 +1,16 @@
 <?php 
- include('php\pcabeza\pcabezadependiente.php');	
+session_start();
+        include('php\pcabeza\pcabezaperfildependiente.php');
+        $id =$_GET['id'];
+        echo $id;
 ?>
 <div class="panel panel-default" style="margin-top: 10px"> 		
 	<div class="panel-heading">
 		<h1 align="center">Nuevo Dependiente</h1> 			
 	</div>
+  
 	<div class="panel-body"style="margin-left: 60px">
-		<form action="php\empleado_registro.php?accion=INS" method="POST">
+		<form action="php\dependiente_registroperfil.php?accion=INS" method="POST">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">

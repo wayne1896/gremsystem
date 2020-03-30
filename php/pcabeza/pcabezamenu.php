@@ -1,6 +1,6 @@
 <?php
 include('php\consultas\consultalogin.php');
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -51,6 +51,10 @@ include('php\consultas\consultalogin.php');
     </form>
 
     <!-- Navbar -->
+    
+   
+
+    <h4 >Perfil <?php echo $_SESSION['User'];?></h4>
     <ul class="nav navbar-nav navbar-right">
 		<li><button onclick="myFunction()" type="button" class="btn btn-dark">Salir</button></li>
     <script>

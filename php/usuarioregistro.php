@@ -46,7 +46,7 @@
 		$sql="
 		UPDATE `loginuser` SET 
 		
-		`claveuser`='$claveuser',
+		`claveuser`='$clave'
 	
 		WHERE 
 		id_user ='$codigo'

@@ -76,9 +76,9 @@
 					 				<td>".$row['nombredependien']."</td>
 					 				<td>".$row['parentesco']."</td>
 									 <td>".$row['fechanacimientodepen']."</td> 
-									 <td>".$row['esadodependien']."</td>
+									 <td>".$row['estadodependien']."</td>
 					 				<td>
-										 <a href='dependiente_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Editar</a>
+										 <a href='dependiente_actualizar.php?id=".$row['id_socio']."' class='btn btn-primary'>Editar</a>
 										
 					 					<a href='php\socio_registro.php?accion=DLT&id=".$row['id_clien']."' class='btn btn-danger'>Eliminar</a>
 					 				</td>

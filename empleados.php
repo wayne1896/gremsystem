@@ -97,5 +97,6 @@
 			</div>
 		</div>
 
-<?php include'php/ppie_menu.php';?>		
+<?php	
+	include('php/ppie_menu.php');			
 ?>

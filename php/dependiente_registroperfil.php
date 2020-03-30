@@ -10,15 +10,17 @@
 		$nombre=$_POST['nombre'];
 		$parentesco=$_POST['parentesco'];
 		$fecha=$_POST['fecha'];
-		$estado=$_POST['estado'];
+        $estado=$_POST['estado'];
+        $codigo=$_POST['codigo'];
 		$sql="
-		INSERT INTO `dependientesclien`(`nombredependien`, `parentesco`,`fechanacimientodepen`, `estadodependien`) 
+		INSERT INTO `dependientesclien`(`nombredependien`, `parentesco`,`fechanacimientodepen`, `estadodependien`,id_clien) 
 		 
 		 VALUES (
 		'$nombre',
 		'$parentesco',
 		'$fecha',
-		'$estado'
+        '$estado' ,
+        '$codigo'
 		)
 		";
 		if ($mysqli->query($sql)){
@@ -28,7 +30,7 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../dependiente.php?s=".$msj);
+		header("Location: ../dependienteperfil.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';
@@ -53,7 +55,7 @@
 			$msj='errorudt';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../dependiente.php?s=".$msj);
+		header("Location: ../dependienteperfil.php?s=".$msj);
 
 	}
 	if ($i=='DLT'){

@@ -86,7 +86,7 @@
 								<td>".$row['estadoclien']."</td>
 								<td>
 					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Facturar Deuda</a>
-					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='btn btn-info'>Reporte individual</a>
+					 					<a href='app/index2.php?id=".$row['id_clien']."' class='btn btn-info'>Reporte individual</a>
 					 				</td>
 					 			
 					 			</tr>
