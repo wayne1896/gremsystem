@@ -36,7 +36,7 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../login.php?s=".$msj);
+		header("Location: login.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';
@@ -59,7 +59,7 @@
 			$msj='errorudt';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../login.php?s=".$msj);
+		header("Location: login.php?s=".$msj);
 
 	}
 	if ($i=='DLT'){
