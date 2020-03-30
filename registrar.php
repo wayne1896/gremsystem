@@ -27,92 +27,66 @@
      
      
      <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" name="nombreuser" placeholder="Nombre Completo">
+         <i class="fas fa-user-tie icon"></i>
+         <input type="text" required="" name="nombreuser" placeholder="Nombre Completo">
          
          </div>
          <div class="input-contenedor">
          <i class="fas fa-user icon"></i>
-         <input type="text" name="user" placeholder="Usuario">
+         <input type="text" name="user" required="" placeholder="Usuario">
          
          </div>
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input type="text" name="correouser" placeholder="Correo Electronico">
+         <input type="text" name="correouser" required="" placeholder="Correo Electronico">
          
          </div>
          
          <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
-         <input type="password" name="claveuser" placeholder="Contraseña">
+         <input type="password" name="claveuser" required="" placeholder="Contraseña">
        
          
          </div>
 
-<legend>Preguntas De seguridad</legend>
+         <div class="input-contenedor">
+        <i class="fas fa-question icon"></i>
+         <input type="text" name="respuesta1" required="" placeholder="¿Donde naciste?">
+       
+         
+         </div>
 
-<!-- Select Basic -->
-<div class="form-group" >
-  <label class="control-label" class="col-lg-6 " width="250" for="selectbasic">Pregunta de seguridad 1<span style="color:red">*</span></label>
-  <div>
-    <select id="pregunta1" name="menu" size="pregunta1" class="form-control" >
-      <option value="1">Donde naciste?</option>
-      <option value="2">Cual es tu apodo?</option>
-    </select>
-  </div>
-</div>
+         <div class="input-contenedor">
+        <i class="fas fa-question  icon"></i>
+         <input type="text" name="respuesta2" required="" placeholder="¿Equipo favorito">
+       
+         
+         </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class= for="textinput">Respuesta<span style="color:red">*</span></label>  
-  <div>
-  <input id="respuesta2"  name="respuesta2" type="tex" placeholder="Respuesta" class="form-control input-md">
-   
-  </div>
-</div>
 
-<div class="form-group">
-  <label class= for="selectbasic">Pregunta de seguridad 2<span style="color:red">*</span></label>
-  <div>
-    <select id="pregunta2" name="pregunta2" size="1" class="form-control">
-      <option value="1">Artista favorito?</option>
-      <option value="2">Musica Favorita?</option>
-    </select>
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class= for="textinput">Respuesta<span style="color:red">*</span></label>  
-  <div>
-  <input id="respuesta2"  name="respuesta2" type="tex" placeholder="Respuesta" class="form-control input-md">
-   
-  </div>
-</div>
-
-</fieldset>
 
 
 <div class="form-group" >
   <label class="control-label" class="col-lg-6 " width="250" for="selectbasic">Cargo<span style="color:red">*</span></label>
   <div>
-    <select id="pregunta1" name="menu" size="1" class="form-control" >
-      <option value="1">Administrador</option>
-      <option value="2">Jefe</option>
-      <option value="2">Secretaria</option>
-      <option value="2">Cobrador</option>
+    <select id="privilegio" name="privilegio" size="1" class="form-control" >
+      <option value="Admin">Administrador</option>
+      <option value="Jefe">Jefe</option>
+      <option value="Secretaria">Secretaria</option>
+      <option value="Cobrador">Cobrador</option>
     </select>
   </div>
 </div>
      
-<input type="submit" class="btn btn-success mt-3 btn-lg btn-block"  value="Enviar formulario">
+<input type="submit" class="btn btn-success mt-3 btn-lg btn-block"  value="Registrar">
          <h1></h1>
          <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
          <p>¿Ya tienes una cuenta?<a class="link" href="php\login.php">Iniciar Sesion</a></p>
          
      </div>
     </form>
-    <?php	
-include('php/ppie_menu.php');		
+
+   <?php	
+	include('php/ppie_menu.php');			
 ?>

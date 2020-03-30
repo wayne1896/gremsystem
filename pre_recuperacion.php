@@ -35,20 +35,32 @@ session_start();
     	<form action="php\usuarioregistro.php?accion=UDT" method="POST">
     		
 		<div class="row">
-    			<div class="col-md-4 col-md-offset-2 col-sm-4
+    			<div class="col-md-3 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
     				<label class="control-label">Codigo<span style="color:red">*</span></label>
     				<input type="text" name="codigo" required="" placeholder="Nombre y Apellido" class="form-control" required=""
 						readonly="" value="<?php echo $row['id_user'] ?>">
+						
+						
+    			</div>
+    			</div>
+
+					
+						<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
+    			<div class="form-group">
+    				<label class="control-label">Nombre de Usuario<span style="color:red">*</span></label>
+    				<input type="text" name="nombreuser" required="" placeholder="Nombre y Apellido" class="form-control" required=""
+						readonly="" value="<?php echo $row['nombreuser'] ?>">
     				
     			</div>
-    			</div>
-         
+    			</div></div>
+    				
+				
     				
           <div class="row">
-    			<div class="col-md-4 col-md-offset-2 col-sm-4
+    			<div class="col-md-3 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
@@ -64,7 +76,8 @@ session_start();
     			  <div class="form-group">
 				  <label class="control-label">Confirme Contraseña<span style="color:red">*</span></label>
 				  <input type="password" name="claveuser" placeholder="Contraseña" required="">
-    				
+    				</div>
+    			</div></div>
     		
     		<div class="row">
     			<div >
@@ -85,5 +98,5 @@ session_start();
 
 
 <?php	
-	include('php/ppie.php');		
+	include('php/ppie_menu.php');	
 ?>
