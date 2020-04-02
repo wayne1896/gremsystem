@@ -1,5 +1,8 @@
 <?php 
+
  include('php\pcabeza\pcabezadependiente.php');	
+ session_start();
+$id= $_GET['id'];
 ?>
 <div class="panel panel-default" style="margin-top: 10px"> 		
 	<div class="panel-heading">
