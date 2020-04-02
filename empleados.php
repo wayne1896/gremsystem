@@ -71,7 +71,7 @@
 			</div>
 			<div class="panel-body"style="margin-left: 10px">
 				<p>
-					<a href="empleado_nuevo.php" class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>
+					<a href="empleado_nuevo.php" class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
 				</p>	
 			<div class="limiter">
 			<div class="container-table100">
