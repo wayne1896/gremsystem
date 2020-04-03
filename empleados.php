@@ -73,6 +73,8 @@
 				<p>
 					<a href="empleado_nuevo.php" class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
 				</p>	
+				
+			<div class="table-wrapper-scroll-y my-custom-scrollbar">
 			<div class="limiter">
 			<div class="container-table100">
 			<div class="wrap-table100">

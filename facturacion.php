@@ -76,7 +76,7 @@
 					<a href="app/index.php" class="btn btn-info pull-left" target="_blank"style="margin-left: 10px">Reporte general</a>
 					<a href="general_factura.php" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
 				</p>	
-
+			<div class="table-wrapper-scroll-y my-custom-scrollbar">
 			<div class="limiter">
 			<div class="container-table100">
 			<div class="wrap-table100">
