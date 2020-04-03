@@ -57,7 +57,7 @@ include('php\consultas\consultagremio.php');
         <li class="<?php echo $active_facturas;?>"><a href="menu.php"><i class='glyphicon glyphicon-home'></i><font color="" size="4"> Inicio </font></a></li>
         <li class="<?php echo $active_facturas;?>"><a href="facturacion.php"><i class='glyphicon glyphicon-align-justify'></i><font color="" size="4"> Facturas </font><span class="sr-only">(current)</span></a></li>
         <li class="<?php echo $active_productos;?>"><a href="inventario.php"><i class='glyphicon glyphicon-shopping-cart'></i><font color="" size="4"> Inventario</font></a></li>
-		<li class="<?php echo $active_clientes;?>"><a href="socio.php"><i class='glyphicon glyphicon-user'></i><font color="" size="4"> Clientes</font></a></li>
+		<li class="<?php echo $active_clientes;?>"><a href="socio.php"><i class='glyphicon glyphicon-user'></i><font color="" size="4"> Socios</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href="empleados.php"><i  class='glyphicon glyphicon-lock'></i><font color="" size="4"> Empleados</font></a></li>
     <li class="<?php echo $active_usuarios;?>"><a href="deceso.php"><i  class='glyphicon glyphicon-briefcase'></i><font color="" size="4"> Decesos</font></a></li>
 
