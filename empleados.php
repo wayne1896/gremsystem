@@ -77,7 +77,7 @@
 			<div class="container-table100">
 			<div class="wrap-table100">
 			<div class="table100 ver6 m-b-110">
-					<table data-vertable="ver6"" style="text-align: center;">
+					<table data-vertable="ver6" style="text-align: center;">
 			 		<thead>
 			 			<tr class="row100 head">
 			 				<th class="column100 column1" data-column="column1">ID</th>
