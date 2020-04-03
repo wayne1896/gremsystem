@@ -108,7 +108,7 @@
 		  <?php
 		 echo "<a href='perfil_actualizar.php?id2=$id2' class='btn btn-primary'>Editar</a>";
 		 echo "       "; 
-	 		$id=$row['id_clien'];
+			 $id=$row['id_clien'];
 		 echo "<a href='dependienteperfil.php?id=$id' class='btn btn-secondary'>Dependientes</a>";
 		
 			?>
@@ -119,5 +119,5 @@
             </div>
 
             <?php 
- include('php/ppie.php');	
+include('php/ppie_menu.php');	
 ?>

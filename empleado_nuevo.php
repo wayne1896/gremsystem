@@ -74,5 +74,5 @@
 	</div>
 </div>
 <?php	
-	include('php/ppie_menu.php');		
+include('php/ppie_menu.php');		
 ?>

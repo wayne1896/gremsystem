@@ -8,7 +8,7 @@
  <header>
 	 <div  class="contenedor" id="uno" href="socio.php">
 	 	 <a href="socio.php" ><img class= "icon" src="img/trabajo-en-equipo.png"></a>
-		 <a href="socio.php" ><p class="texto">Clientes</p></a>
+		 <a href="socio.php" ><p class="texto">Socios</p></a>
 	 </div>
 
 	 <div class="contenedor" id="dos">

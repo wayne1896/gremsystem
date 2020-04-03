@@ -5,14 +5,12 @@
   $plantilla = '<body>
     <header class="clearfix">
      
-      <div class="footer2">
-          <img src="C:\xampp\htdocs\Gremsystem-cj\app\plantilla\img\Logo2.jpg">
+      <div class="icon">
+          <img src="C:\xampp\htdocs\Gremsystem\app\plantilla\img\Logo2.jpg">
       </div>
-
       <div class="nombre">
           GremSystem
       </div>
-
  
       <h1>REPORTE GENERAL</h1>
       <div id="company" class="clearfix">

@@ -27,7 +27,7 @@
      
      
      <div class="input-contenedor">
-         <i class="fas fa-user-tie icon"></i>
+         <i class="fas fa-user icon"></i>
          <input type="text" required="" name="nombreuser" placeholder="Nombre Completo">
          
          </div>
@@ -79,7 +79,7 @@
   </div>
 </div>
      
-<input type="submit" class="btn btn-success mt-3 btn-lg btn-block"  value="Registrar">
+<input type="submit" class="btn btn-success mt-3 btn-lg btn-block"  value="Enviar formulario">
          <h1></h1>
          <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
          <p>¿Ya tienes una cuenta?<a class="link" href="php\login.php">Iniciar Sesion</a></p>

@@ -1,11 +1,21 @@
 <?php
 
    function getPlantilla($cliente){
+
+require 'cone_reporte.php';
+$consulta = "SELECT * FROM socio s JOIN deuda d ON (s.id_clien=d.id_clien)
+JOIN empleado e ON (s.id_empleado=e.id_empleado) where s.id_clien=$id";
+$resultado = $mysqli->query($consulta);
  
   $plantilla = '<body>
     <header class="clearfix">
-      <div id="logo">
-        <img src="img/logo.png">
+      <div class="icon" >
+      
+        <img src="C:\xampp\htdocs\Gremsystem\app\plantilla\img\Logo2.jpg"  >
+      
+      </div> 
+      <div class="nombre">
+          GremSystem
       </div>
       <h1>REPORTE DE FACTURACION</h1>
       <div id="company" class="clearfix">
@@ -15,9 +25,11 @@
         <div><a href="mailto:company@example.com">pj.olivero12@gmail.com</a></div>
       </div>
       <div id="project">
+
+      
         <div><span>PROJECTO</span> Gestor de Gremios o funerarias</div>
-        <div><span>CLIENTE</span> Carlos Jose</div>
-        <div><span>DIRECCION</span> </div>
+        <div><span>CLIENTE</span> '.$consulta["nombreclien"] .'</div>
+        <div><span>DIRECCION</span>'.$consulta["id_clien"] .' </div>
         <div><span>EMAIL</span> <a href="mailto:john@example.com">'. $cliente["apellidoclien"].'</a></div>
         <div><span>FECHA</span> </div>
         <div><span>DUE DATE</span></div>

@@ -5,6 +5,7 @@
 
 	$mensaje='';
 	$color='';
+
 	if (isset($_GET['s'])) {
 		switch ($_GET['s']) {
 			case 'success':
@@ -50,11 +51,16 @@
 <div class="panel panel-default" style="margin-top: 10px"> 		
 			<div class="panel-heading">
 		   		<h1 style="text-align:center;">Dependientes</h1> 
-				   			
-			</div>
+			</div>  <?php echo $id; 
+
+			?> 
+							
+				 		
 			<div class="panel-body"style="margin-left: 10px">
 				<p>
-					<a href="dependiente_nuevoperfil.php?id=$id" class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>
+				<?php
+					echo '<a href="dependiente_nuevoperfil.php?id=$id"  class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>';
+				?>
 				</p>	
 				
 	 			<table class="table table-striped" style="text-align: center;">
@@ -95,5 +101,5 @@
 
 
 			<?php	
-	include('php/ppie.php');		
+include('php/ppie_menu.php');		
 ?>
