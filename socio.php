@@ -92,8 +92,7 @@
 	 			<table data-vertable="ver6" style="text-align: center;">
 			 		<thead>
 			 			<tr>
-			 			
-
+			
 							 <tr class="row100 head">
 			 				 <th class="column100 column1" data-column="column1">ID</th>
 			 				 <th class="column100 column2"data-column="column2">Nombre</th>
@@ -154,7 +153,7 @@
 					 <script src="js/main.js"></script>
 							 </div>
 						 </div>
-							 </Div></Div>
+							 
 			</div>
 		</div>
 
