@@ -44,7 +44,7 @@
 	}
 ?>
 
-	
+
 
 <head>
 
@@ -75,18 +75,17 @@
 </head>
 
 
-<div class="panel panel-default" style="margin-top: 10px"> 		
-			<div class="panel-heading">
-		   		<h1 style="text-align:center;">Socio</h1> 
-				   			
-			</div>
-			<p>
-					<a href="socio_nuevo.php"  class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
-				</p>
+<div class="col-sm-7 col-sm-offset-2">
+<div class="panel panel-default" style="width:120%;"  > 		
+			<div class="panel-heading "style="background-color:#2F4F4F">
+		   		<h1 style="text-align:center;color:White;font-size:60px;">Socio</h1> 
+				  <p> <a href="socio_nuevo.php"  class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>	</p>		
+			</div >
+
 				<div class="table-wrapper-scroll-y my-custom-scrollbar">	
-				<div class="limiter" >
-				<div class="container-table100">
-				<div class="wrap-table100">
+				<div class="limiter" style="background-color:#2F4F4F">
+				<div class="container-table100" style="background-color:#2F4F4F"> 
+				<div class="wrap-table100" style="background-color:#2F4F4F">
 				<div class="table100 ver6 m-b-110">
 					
 	 			<table data-vertable="ver6" style="text-align: center;">
@@ -138,7 +137,6 @@
 			 			?> 			
 			 		</tbody>
 				</table>
-				<nav aria-label="Page navigation example">
 
 				</Div></Div>
 	 			
@@ -155,6 +153,7 @@
 						 </div>
 							 
 			</div>
+</div>
 		</div>
 
 <?php	

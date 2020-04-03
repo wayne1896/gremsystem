@@ -36,6 +36,24 @@
 	}
 ?>
 <head>
+			<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -51,19 +69,23 @@
 			</div>
 			<div class="panel-body">
 				<p>
-					<a href="inventario_nuevo.php" class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>
+					<a href="inventario_nuevo.php" class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
 				</p>	
-				
-			
-	 			<table class="table table-striped" style="text-align: center;">
+				<div class="table-wrapper-scroll-y my-custom-scrollbar">	
+				<div class="limiter" >
+				<div class="container-table100">
+				<div class="wrap-table100">
+				<div class="table100 ver6 m-b-110">
+					
+	 			<table data-vertable="ver6" >
 			 		<thead>
-			 			<tr>
-						 <th>ID</th>
-			 				<th>Descripcion</th>
-			 				<th>Cantidad</th>
-							 <th>Estado</th>
+			 			<tr class='row100 head'>
+						 <th class="column100 column1" data-column="column1">ID</th>
+			 				<th class="column100 column2" data-column="column2">Descripcion</th>
+			 				<th class="column100 column3" data-column="column3">Cantidad</th>
+							 <th class="column100 column4" data-column="column4">Estado</th>
 							  				
-			 				<th></th>
+			 				<th class="column100 column5" data-column="column5"></th>
 			 			</tr>
 			 		</thead>
 			 		<tbody>
@@ -71,15 +93,15 @@
 			 			$query=lista_cursos();
 		 				while ( $row= $query->fetch_assoc() ) {
 		 					echo" 
-								<tr>
-								<td>".$row['id_inventario']."</td>
-					 				<td>".$row['descripcion']."</td>
-									 <td>".$row['cantida']."</td>
-									 <td>".$row['estado']."</td>
+								<tr class='row100>
+								<td class='column100 column1'>".$row['id_inventario']."</td>
+					 				<td class='column100 column2'>".$row['descripcion']."</td>
+									 <td class='column100 column3'>".$row['cantida']."</td>
+									 <td class='column100 column4'>".$row['estado']."</td>
 					 		
 					 				<td>
-					 					<a href='inventario_actualizar.php?id=".$row['id_inventario']."' class='btn btn-primary'>Editar</a>
-					 					<a href='php\inventario_registro.php?accion=DLT&id=".$row['id_inventario']."' class='btn btn-danger'>Eliminar</a>
+					 					<a href='inventario_actualizar.php?id=".$row['id_inventario']."' class='fa fa-edit fa-2x'></a>
+					 					<a href='php\inventario_registro.php?accion=DLT&id=".$row['id_inventario']."' class='fas fa-user-times  fa-2x'></a>
 					 				</td>
 					 			</tr>
 		 					";
@@ -87,6 +109,19 @@
 			 			?> 			
 			 		</tbody>
 				</table>
+				</Div></Div>
+	 			
+				 <!--===============================================================================================-->	
+					 <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+				 <!--===============================================================================================-->
+					 <script src="vendor/bootstrap/js/popper.js"></script>
+					 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+				 <!--===============================================================================================-->
+					 <script src="vendor/select2/select2.min.js"></script>
+				 <!--===============================================================================================-->
+					 <script src="js/main.js"></script>
+							 </div>
+						 </div>
 			</div>
 		</div>
 

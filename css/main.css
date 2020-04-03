@@ -23,6 +23,11 @@
 }
 
 body, html {
+  background-image: url(../img/flores.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	height: 100%;
 	font-family: sans-serif;
 }
