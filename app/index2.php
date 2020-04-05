@@ -9,7 +9,7 @@ require_once('plantilla/reporte/reporteindividual.php');
 $css = file_get_contents('plantilla/reporte/style.css');
 
 //base de datos
-require_once('reporte_cone.php');
+require_once('reporte_cone2.php');
 
 $mpdf = new \Mpdf\Mpdf([
 
