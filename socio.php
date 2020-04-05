@@ -64,7 +64,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-
+<link href="css/sb-admin.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -75,17 +75,17 @@
 </head>
 
 
-<div class="col-sm-7 col-sm-offset-2">
-<div class="panel panel-default" style="width:120%;"  > 		
-			<div class="panel-heading "style="background-color:#2F4F4F">
-		   		<h1 style="text-align:center;color:White;font-size:60px;">Socio</h1> 
+
+<div class="panel panel-default"  > 		
+			<div class="panel-heading ">
+		   		<h1 style="text-align:center;font-size:60px;">Socio</h1> 
 				  <p> <a href="socio_nuevo.php"  class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>	</p>		
 			</div >
 
 				<div class="table-wrapper-scroll-y my-custom-scrollbar">	
-				<div class="limiter" style="background-color:#2F4F4F">
-				<div class="container-table100" style="background-color:#2F4F4F"> 
-				<div class="wrap-table100" style="background-color:#2F4F4F">
+				<div class="limiter">
+				<div class="container-table100"> 
+				<div class="wrap-table100">
 				<div class="table100 ver6 m-b-110">
 					
 	 			<table data-vertable="ver6" style="text-align: center;">

@@ -14,6 +14,7 @@
 
 	<div class="panel-body"style="margin-left: 60px">
 		<form action="php\socio_registro.php?accion=INS" method="POST">
+		
 			<div class="row">
 			<div class="col-md-3 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-3 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
