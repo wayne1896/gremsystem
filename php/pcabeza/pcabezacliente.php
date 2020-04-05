@@ -1,5 +1,5 @@
 <?php
-include('php/pcabeza\pcabezacliente.php');		
+include('php\consultas\consultacliente.php');	
 
 ?>
 
