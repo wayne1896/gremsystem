@@ -1,8 +1,15 @@
 <?php 
 session_start();
-        include('php\pcabeza\pcabezaperfildependiente.php');
-        $id =$_GET['id'];
-        echo $id;
+		
+		include('php\pcabeza\pcabezaperfildependiente.php');
+		
+		$id= $_GET['id'];
+		if(isset($_GET['id'])){
+			$query=extraerdependienteUDT($_GET['id']);
+		 $row=$query->fetch_assoc();
+		 
+	 }echo $id;
+        
 ?>
 <div class="panel panel-default" style="margin-top: 10px"> 		
 	<div class="panel-heading">
@@ -34,6 +41,13 @@ session_start();
 					<div class="form-group">
 						<label class="control-label">Estado<span style="color:red">*</span></label>
 						<input type="text" id="estado" name="estado" required="" placeholder="Estado de Dependiente" class="form-control">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
+					<div class="form-group">
+						<label class="control-label" hidden='True'>Estado<span style="color:red">*</span></label>
+						<input type="text" name='codigoclien' hidden='True' value="<?php $id ?>" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
 			</div>

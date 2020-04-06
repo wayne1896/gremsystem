@@ -14,11 +14,11 @@
 				$color='danger';
 				break;
 			case 'successudt':
-				$mensaje='Registro actualizado correctamente';
+				$mensaje='Facturacion Generada';
 				$color='success';
 				break;
 			case 'errorudt':
-				$mensaje='Imposible actualizar el registro';
+				$mensaje='Error al General Facturacion';
 				$color='danger';
 				break;
 			case 'successdlt':
@@ -73,7 +73,7 @@
 
 				<p>
 					<a href="app/index.php" class="btn btn-info pull-left" target="_blank"style="margin-left: 10px">Reporte general</a>
-					<a href="general_factura.php" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
+					<a href="php/general_factura.php?accion=UDT" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
 				</p>
 				<br>
 </br>
@@ -91,7 +91,7 @@
 			 				<th class="column100 column2" data-column="column2">Nombre</th>
 							 <th class="column100 column3" data-column="column3">Apellido</th>
 			 				<th class="column100 column4" data-column="column4">Deuda</th>
-							 <th class="column100 column5" data-column="column5">Cobrador</th>
+							 <th class="column100 column5" data-column="column5">Fecha</th>
 			 				<th class="column100 column6" data-column="column6">Estado</th> 				
 			 				<th class="column100 column7" data-column="column7"></th>
 			 			</tr>
@@ -106,7 +106,7 @@
 								<td class='column100 column2'>".$row['nombreclien']."</td>
 								<td class='column100 column3'>".$row['apellidoclien']."</td>
 								<td class='column100 column4'>$".$row['deuda']."</td>
-								<td class='column100 column5'>".$row['nombreemple']."</td> 
+								<td class='column100 column5'>".$row['fecha']."</td> 
 								<td class='column100 column6'>".$row['estadoclien']."</td>
 								<td>
 					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Facturar Deuda</a>

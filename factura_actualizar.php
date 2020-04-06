@@ -1,7 +1,7 @@
 <?php
   include('php/pcabeza/pcabezacliente.php');
   if(isset($_GET['id'])){
-   	$query=extraersocioUDT($_GET['id']);
+   	$query=extraersocioUDT3($_GET['id']);
     $row=$query->fetch_assoc();
 }
   
@@ -63,7 +63,7 @@
 	    			col-xs-offset-0">
     			  <div class="form-group">
     				<label class="control-label">Fecha de Factura <span style="color:red">*</span></label>
-    				<input type="date" name="fechapago" required=""  class="form-control" 
+    				<input type="date" name="fechapago"  class="form-control" 
                     value="<?php echo $row['fecha']?>">
     				
     			  </div>

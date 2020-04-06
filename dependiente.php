@@ -1,7 +1,7 @@
 	<?php
 			include('php\pcabeza\pcabezadependiente.php');		
-
-
+			$id = $_GET['id'];
+		
 	$mensaje='';
 	$color='';
 	if (isset($_GET['s'])) {
@@ -68,7 +68,8 @@
 			 		</thead>
 			 		<tbody>
 			 			<?php
-			 			$query=lista_cursos();
+						Echo $id;
+			 			$query=lista_cursos($id);
 		 				while ( $row= $query->fetch_assoc() ) {
 		 					echo" 
 								<tr>

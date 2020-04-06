@@ -37,17 +37,7 @@
 				</div>
 			
 				
-				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-xs-12 col-xs-offset-0">
-					<div class="form-group">
-    				<label class="control-label">Cobrador <span style="color:red">*</span></label>
-    				<select class="form-control" name="id_empleado">
-                       <option value="1" >Carlos J Gomez</option>
-                       
-
-    				 </select>
-    				
-    			</div>
-    			</div>
+				
 				
 				</div>
 	       
@@ -103,7 +93,19 @@
 						<input type="text" id="clave" name="clave" required="" placeholder="Contraseña" class="form-control">
 					</div>
 				</div></div>
-		
+				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-xs-12 col-xs-offset-0"
+				hidden="true"
+				>
+					<div class="form-group">
+    				<label class="control-label">Cobrador <span style="color:red">*</span></label>
+    				<select class="form-control" name="id_empleado">
+                       <option value="1" ></option>
+                       
+
+    				 </select>
+    				
+    			</div>
+    			</div>
 	
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0">
