@@ -1,5 +1,5 @@
 <?php 
- include('php/pcabeza\pcabezaempleado.php');	
+ include('php\pcabeza\pcabezainventario.php');	
 ?>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -11,7 +11,7 @@
 		<h1 align="center">Nuevo Inventario</h1> 			
 	</div>
 	<div class="panel-body"style="margin-left: 60px">
-		<form action="php\empleado_registro.php?accion=INS" method="POST">
+		<form action="php\inventario_registro.php?accion=INS" method="POST">
 			<div class="row">
 				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">

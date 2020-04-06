@@ -36,7 +36,7 @@
 	}
 ?>
 <head>
-			<!--===============================================================================================-->	
+	<!--===============================================================================================-->	
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -53,7 +53,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -61,23 +60,24 @@
 
 <!-- Latest minified bootstrap js -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
-	 	<div class="panel panel-default" style="margin-top: 10px"> 		
+<div class="panel panel-default" style="margin-top: 10px"> 		
 			<div class="panel-heading">
-		   		<h1 style="text-align:center;">Inventarios</h1> 
+		   		<h1 style="text-align:center;">Inventario</h1> 
 				   			
 			</div>
-			<div class="panel-body">
+			<div class="panel-body"style="margin-left: 10px">
 				<p>
 					<a href="inventario_nuevo.php" class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
 				</p>	
-				<div class="table-wrapper-scroll-y my-custom-scrollbar">	
-				<div class="limiter" >
-				<div class="container-table100">
-				<div class="wrap-table100">
-				<div class="table100 ver6 m-b-110">
-					
-	 			<table data-vertable="ver6" >
+			<div class="table-wrapper-scroll-y my-custom-scrollbar">
+			<div class="limiter">
+			<div class="container-table100">
+			<div class="wrap-table100">
+			<div class="table100 ver6 m-b-110">
+					<table data-vertable="ver6" style="text-align: center;">
 			 		<thead>
 			 			<tr class='row100 head'>
 						 <th class="column100 column1" data-column="column1">ID</th>
@@ -93,7 +93,7 @@
 			 			$query=lista_cursos();
 		 				while ( $row= $query->fetch_assoc() ) {
 		 					echo" 
-								<tr class='row100>
+								<tr class='row100'>
 								<td class='column100 column1'>".$row['id_inventario']."</td>
 					 				<td class='column100 column2'>".$row['descripcion']."</td>
 									 <td class='column100 column3'>".$row['cantida']."</td>
