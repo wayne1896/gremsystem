@@ -4,7 +4,6 @@
   if(isset($_GET['id2'])){
 	 $query= extraersocio2UDT($_GET['id2']);
   $row=$query->fetch_assoc();}
-
 ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -136,7 +135,7 @@
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-    			      <a href="propietario_mant.php" class="btn btn-danger">Atras</a>
+    			      <a href="perfil.php?id2=<?php echo "$id2" ?>" class="btn btn-danger">Atras</a>
     			      <input type="submit" value="Guardar" class="btn btn-success"> 
     		      </div>
     		    </div>	

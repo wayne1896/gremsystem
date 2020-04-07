@@ -9,7 +9,7 @@ include('php\consultas\consultacliente.php');
 
 <head>
 
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -55,7 +55,9 @@ include('php\consultas\consultacliente.php');
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
       
     </form>
+
     <?php 
+    
      echo"<span style='color:WHITE'>Usuario ".$id2." </span>"; ?>
     <!-- Navbar -->
     <li class="nav-item dropdown no-arrow">

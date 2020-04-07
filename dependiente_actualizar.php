@@ -1,10 +1,11 @@
 <?php
   include('php\pcabeza\pcabezadependiente.php');
-			$id2= $_GET['id'];
+			$id= $_GET['id'];
 			if(isset($_GET['id'])){
 				$query=extraerdependienteUDT($_GET['id']);
 			 $row=$query->fetch_assoc();
 			}
+			
 ?>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -87,13 +88,14 @@
 						<input type="text" name='codigoclien' hidden="true" value="<?php echo $row['id_clien'];?>" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
+				<?php $id2=$row['id_clien'];?>
           	
     		<div class="row">
     			<div class="col-md-8 col-md-offset-2 col-sm-8
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-    			      <a href="Dependiente.php" class="btn btn-danger">Atras</a>
+				   <a href="dependiente.php?id=<?php echo $id2; ?>" class="btn btn-danger">Atras</a>
     			      <input type="submit" value="Guardar" class="btn btn-success"> 
     		      </div>
     		    </div>	

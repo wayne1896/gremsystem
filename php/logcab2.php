@@ -55,8 +55,7 @@ include('consultas\consultalogin2.php');
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="login.php?logout"><i class='glyphicon glyphicon-off' ></i><font color="red" size="4"> Salir</font></a></li>
-      </ul>
+		   </ul>
     </div>
 
   </nav>

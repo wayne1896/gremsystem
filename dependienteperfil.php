@@ -116,7 +116,7 @@
 								 <td class='column100 column4'>".$row['fechanacimientodepen']."</td> 
 								 <td class='column100 column5'>".$row['estadodependien']."</td>
 								 <td class='column100 column6'>
-									 <a href='dependiente_actualizar.php?id=".$row['id_socio']."' class='btn btn-primary'>Editar</a>
+									 <a href='dependiente_actualizarperfil.php?id=".$row['id_socio']."' class='btn btn-primary'>Editar</a>
 									
 									 <a href='php\socio_registro.php?accion=DLT&id=".$row['id_clien']."' class='btn btn-danger'>Eliminar</a>
 								 </td>

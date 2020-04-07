@@ -87,13 +87,14 @@
 						<input type="text" name='codigoclien' Hidden="true" value="<?php echo $row['id_clien'];?>" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
-          	
+          	<?php	$id2=$row['id_clien']
+			  ?>
     		<div class="row">
     			<div class="col-md-8 col-md-offset-2 col-sm-8
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-    			      <a href="Dependiente.php" class="btn btn-danger">Atras</a>
+				   <a href="dependienteperfil.php?id=<?php echo $id2; ?>" class="btn btn-danger">Atras</a>
     			      <input type="submit" value="Guardar" class="btn btn-success"> 
     		      </div>
     		    </div>	

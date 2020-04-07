@@ -30,7 +30,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
-						<a href="empleados.php" class="btn btn-danger">Atras</a>
+						<a href="inventario.php" class="btn btn-danger">Atras</a>
 						<input type="submit" value="Guardar" class="btn btn-success">
 					</div>
 				</div>
