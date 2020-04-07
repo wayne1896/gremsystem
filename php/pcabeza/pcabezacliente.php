@@ -1,5 +1,6 @@
 <?php
-include('php\consultas\consultacliente.php');
+include('php\consultas\consultacliente.php');	
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ include('php\consultas\consultacliente.php');
 
   
     <link href="dist/css/style.min.css" rel="stylesheet">
- 
+ <link href="dist/css/style.min.css" rel="stylesheet">
 
    
 </head>

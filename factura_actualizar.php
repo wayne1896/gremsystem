@@ -1,18 +1,11 @@
 <?php
   include('php/pcabeza/pcabezacliente.php');
   if(isset($_GET['id'])){
-   	$query=extraersocioUDT($_GET['id']);
+   	$query=extraersocioUDT3($_GET['id']);
     $row=$query->fetch_assoc();
 }
   
 ?>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-<!-- Latest minified bootstrap js -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <div class="panel panel-default" style="margin-top: 10px">
   	<div class="panel-heading">
@@ -70,7 +63,7 @@
 	    			col-xs-offset-0">
     			  <div class="form-group">
     				<label class="control-label">Fecha de Factura <span style="color:red">*</span></label>
-    				<input type="date" name="fechapago" required=""  class="form-control" 
+    				<input type="date" name="fechapago"  class="form-control" 
                     value="<?php echo $row['fecha']?>">
     				
     			  </div>

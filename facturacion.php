@@ -14,11 +14,11 @@
 				$color='danger';
 				break;
 			case 'successudt':
-				$mensaje='Registro actualizado correctamente';
+				$mensaje='Facturacion Generada';
 				$color='success';
 				break;
 			case 'errorudt':
-				$mensaje='Imposible actualizar el registro';
+				$mensaje='Error al General Facturacion';
 				$color='danger';
 				break;
 			case 'successdlt':
@@ -37,7 +37,7 @@
 	
 ?>
 <head>
-
+	
 	<!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -70,34 +70,30 @@
 		   		<h1 style="text-align:center;">Pagos</h1> 
 				   			
 			</div>
-			<div class="panel-body">
-			
+
 				<p>
 					<a href="app/index.php" class="btn btn-info pull-left" target="_blank"style="margin-left: 10px">Reporte general</a>
-					<a href="general_factura.php" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
-				</p>	
-			<div class="table-wrapper-scroll-y my-custom-scrollbar">
-			<div class="limiter">
-			<div class="container-table100">
-			<div class="wrap-table100">
-			<div class="table100 ver6 m-b-110">
-			
-	 			<table class="var6" style="text-align: center;">
+					<a href="php/general_factura.php?accion=UDT" class="btn btn-primary pull-left" target="_blank"style="margin-left: 10px">General factura semanal</a>
+				</p>
+				<br>
+</br>
+				<div class="table-wrapper-scroll-y my-custom-scrollbar">	
+				<div class="limiter" >
+				<div class="container-table100">
+				<div class="wrap-table100">
+				<div class="table100 ver6 m-b-110">
+					
+	 			<table data-vertable="ver6">
 			 		<thead>
-			 			<tr>
-			 							
-			 				
+						 <tr>
 							 <tr class="row100 head">
 			 				<th class="column100 column1" data-column="column1">ID</th>
-			 				<th class="column100 column2"data-column="column2">Nombre</th>
-							 <th class="column100 column3"data-column="column3">Apellido</th>
-			 				<th class="column100 column4"data-column="column4">Deuda</th>
-							 <th class="column100 column5"data-column="column5">Cobrador</th>
-							 <th class="column100 column6"data-column="column6">Estado</th>
-							 <th  class="column100 column7" data-column="column7"></th>
-										
-			 				<th  class="column100 column7" data-column="column7"></th>
-			 			</tr>
+			 				<th class="column100 column2" data-column="column2">Nombre</th>
+							 <th class="column100 column3" data-column="column3">Apellido</th>
+			 				<th class="column100 column4" data-column="column4">Deuda</th>
+							 <th class="column100 column5" data-column="column5">Fecha</th>
+			 				<th class="column100 column6" data-column="column6">Estado</th> 				
+			 				<th class="column100 column7" data-column="column7"></th>
 			 			</tr>
 			 		</thead>
 			 		<tbody>
@@ -105,16 +101,16 @@
 			 			$query=lista_cursos();
 		 				while ( $row= $query->fetch_assoc() ) {
 		 					echo" 
-								<tr class='row100'>
-								<td>".$row['id_clien']."</td>
-								<td>".$row['nombreclien']."</td>
-								<td>".$row['apellidoclien']."</td>
-								<td>$".$row['deuda']."</td>
-								<td>".$row['nombreemple']."</td> 
-								<td>".$row['estadoclien']."</td>
+							 <tr class='row100'>
+								<td class='column100 column1'>".$row['id_clien']."</td>
+								<td class='column100 column2'>".$row['nombreclien']."</td>
+								<td class='column100 column3'>".$row['apellidoclien']."</td>
+								<td class='column100 column4'>$".$row['deuda']."</td>
+								<td class='column100 column5'>".$row['fecha']."</td> 
+								<td class='column100 column6'>".$row['estadoclien']."</td>
 								<td>
-					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='fas fa-money-check-alt fa-2x'></a>
-					 					<a href='app/index2.php?id=".$row['id_clien']."' class='fas fa-file-invoice-dollar fa-2x'></a>
+					 					<a href='factura_actualizar.php?id=".$row['id_clien']."' class='btn btn-primary'>Facturar Deuda</a>
+					 					<a href='app/index2.php?id=".$row['id_clien']."' class='btn btn-info'>Reporte individual</a>
 					 				</td>
 					 			
 					 			</tr>
@@ -123,8 +119,8 @@
 			 			?> 			
 			 		</tbody>
 				</table>
-
-				</Div></Div>
+				
+				</Div>
 	 			
 				 <!--===============================================================================================-->	
 					 <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -135,11 +131,12 @@
 					 <script src="vendor/select2/select2.min.js"></script>
 				 <!--===============================================================================================-->
 					 <script src="js/main.js"></script>
-						
-	           </div>
-		    </div>
+							 </div>
+						 </div>
+							 
+			</div>
+				
 		</div>
-</div>
 
 <?php	
 	include('php/ppie_menu.php');		

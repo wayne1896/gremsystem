@@ -43,7 +43,7 @@ include('php\consultas\consultacliente.php');
 
   <nav class="navbar navbar navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="menu.php">GremSystem</a>
+    <a class="navbar-brand mr-1" href="">GremSystem</a>
 
 
 

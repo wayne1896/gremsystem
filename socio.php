@@ -44,7 +44,7 @@
 	}
 ?>
 
-	
+
 
 <head>
 
@@ -64,7 +64,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-
+<link href="css/sb-admin.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -74,27 +74,24 @@
 
 </head>
 
-    
-	
-<div class="panel panel-default" style="margin-top: 10px"> 		
-			<div class="panel-heading">
-		   		<h1 style="text-align:center;">Socio</h1> 
-				   			
-			</div>
-			<p>
-					<a href="socio_nuevo.php"  class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
-				</p>
+
+
+<div class="panel panel-default"  > 		
+			<div class="panel-heading ">
+		   		<h1 style="text-align:center;font-size:60px;">Socio</h1> 
+				  <p> <a href="socio_nuevo.php"  class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>	</p>		
+			</div >
+
 				<div class="table-wrapper-scroll-y my-custom-scrollbar">	
-				<div class="limiter" >
-				<div class="container-table100">
+				<div class="limiter">
+				<div class="container-table100"> 
 				<div class="wrap-table100">
 				<div class="table100 ver6 m-b-110">
 					
 	 			<table data-vertable="ver6" style="text-align: center;">
 			 		<thead>
 			 			<tr>
-			 			
-
+			
 							 <tr class="row100 head">
 			 				 <th class="column100 column1" data-column="column1">ID</th>
 			 				 <th class="column100 column2"data-column="column2">Nombre</th>
@@ -140,7 +137,6 @@
 			 			?> 			
 			 		</tbody>
 				</table>
-				<nav aria-label="Page navigation example">
 
 				</Div></Div>
 	 			
@@ -155,8 +151,9 @@
 					 <script src="js/main.js"></script>
 							 </div>
 						 </div>
-							 </Div></Div>
+							 
 			</div>
+</div>
 		</div>
 
 <?php	

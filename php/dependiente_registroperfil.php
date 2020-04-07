@@ -1,4 +1,5 @@
 <?php 
+session_start();
 	include'conexion.php';	
 	$i='';
 	if(isset($_GET['accion'])){
@@ -11,7 +12,7 @@
 		$parentesco=$_POST['parentesco'];
 		$fecha=$_POST['fecha'];
         $estado=$_POST['estado'];
-        $codigo=$_POST['codigo'];
+        $codigo=$_POST['codigoclien'];
 		$sql="
 		INSERT INTO `dependientesclien`(`nombredependien`, `parentesco`,`fechanacimientodepen`, `estadodependien`,id_clien) 
 		 

@@ -1,7 +1,12 @@
 	<?php
-			include('php\pcabeza\pcabezaperfildependiente.php');		
+			include('php\pcabeza\pcabezaperfildependiente.php');
+	
 			session_start();
 			$id= $_GET['id'];
+			if(isset($_GET['id'])){
+				$query=extraerdependienteUDT($_GET['id']);
+			 $row=$query->fetch_assoc();
+			}
 
 	$mensaje='';
 	$color='';
@@ -51,7 +56,9 @@
 <div class="panel panel-default" style="margin-top: 10px"> 		
 			<div class="panel-heading">
 		   		<h1 style="text-align:center;">Dependientes</h1> 
-			</div>  <?php echo $id; 
+			</div>  <?php echo $id;
+			$id3=$id; 
+			
 
 			?> 
 							
@@ -59,7 +66,20 @@
 			<div class="panel-body"style="margin-left: 10px">
 				<p>
 				<?php
-					echo '<a href="dependiente_nuevoperfil.php?id=$id"  class="btn btn-success pull-left"style="margin-left: 10px">Nuevo</a>';
+					echo '<form method="post"> 
+					<input type="submit" name="button1"
+							class="button" value="Button1" /> 
+					  
+				</form> ';
+					if(array_key_exists('button1', $_POST)) { 
+						button1(); 
+						header("location: dependiente_nuevoperfil.php?id=$id3"); 
+					}
+					function button1() { 
+						header("location: dependiente_nuevoperfil.php?id=$id3"); 
+					} 
+					
+					
 				?>
 				</p>	
 				

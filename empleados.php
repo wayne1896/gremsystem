@@ -73,15 +73,14 @@
 				<p>
 					<a href="empleado_nuevo.php" class="fas fa-user-plus fa-3x"style="margin-left: 20px"></a>
 				</p>	
-				
 			<div class="table-wrapper-scroll-y my-custom-scrollbar">
 			<div class="limiter">
 			<div class="container-table100">
 			<div class="wrap-table100">
 			<div class="table100 ver6 m-b-110">
-
-			<table data-vertable="ver6" style="text-align: center;">
+					<table data-vertable="ver6" style="text-align: center;">
 			 		<thead>
+						 <tr>
 			 			<tr class="row100 head">
 			 				<th class="column100 column1" data-column="column1">ID</th>
 			 				<th class="column100 column2"data-column="column2">Nombre</th>
@@ -92,9 +91,9 @@
 							 <th class="column100 column7"data-column="column7">Telefono</th>
 			 				<th class="column100 column8"data-column="column8">Estado</th> 				
 			 				<th  class="column100 column9" data-column="column9"></th>
-			 			</tr>
+						 </tr>
+						 </tr>
 			 		</thead>
-					 
 			 		<tbody>
 			 			<?php
 			 			$query=lista_cursos();
@@ -121,21 +120,20 @@
 			 		</tbody>
 				</table>
 
-			</Div></Div>
+				</Div></Div>
 	 			
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-			</div>
-		</div>
-			</Div>
-	 			
+				 <!--===============================================================================================-->	
+					 <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+				 <!--===============================================================================================-->
+					 <script src="vendor/bootstrap/js/popper.js"></script>
+					 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+				 <!--===============================================================================================-->
+					 <script src="vendor/select2/select2.min.js"></script>
+				 <!--===============================================================================================-->
+					 <script src="js/main.js"></script>
+							 </div>
+						 </div>
+							
 			</div>
 		</div>
 

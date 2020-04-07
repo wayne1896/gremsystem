@@ -23,9 +23,13 @@
 }
 
 body, html {
+  background-image: url(../img/flores.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	height: 100%;
-  font-family: sans-serif;
-  
+	font-family: sans-serif;
 }
 
 /* ------------------------------------ */
@@ -72,6 +76,14 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
+.my-custom-scrollbar {
+  position: relative;
+  height: 650px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
 /* ------------------------------------ */
 button {
 	outline: none !important;
@@ -131,11 +143,11 @@ th, td {
 
 .column100 {
   width: 170px;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .column100.column1 {
-  width: 250px;
+  width: 200px;
   padding-left: 42px;
 }
 
@@ -146,11 +158,9 @@ th, td {
 
 .row100 td {
   padding-top: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 14px;
 }
-div.content-wrapper{
-   background-color: #333333;
-}
+
 
 /*==================================================================
 [ Ver1 ]*/
@@ -229,7 +239,7 @@ div.content-wrapper{
 /*==================================================================
 [ Ver2 ]*/
 .table100.ver2 tbody tr:nth-child(even) {
-  background-color: #3a8526;
+  background-color: #eaf8e6;
 }
 
 .table100.ver2 td {
@@ -271,7 +281,7 @@ div.content-wrapper{
 /*==================================================================
 [ Ver3 ]*/
 .table100.ver3 tbody tr {
-  border-bottom: 1px solid #885858;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .table100.ver3 td {
@@ -348,7 +358,7 @@ div.content-wrapper{
 /*==================================================================
 [ Ver5 ]*/
 .table100.ver5 tbody tr:nth-child(even) {
-  background-color: #7ea9b6;
+  background-color: #e9faff;
 }
 
 .table100.ver5 td {
@@ -429,7 +439,7 @@ div.content-wrapper{
   font-family: Montserrat-Regular;
   font-size: 14px;
   color: #000000;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .table100.ver6 th {
@@ -452,13 +462,5 @@ div.content-wrapper{
 
 
 .table100.ver6 .row100 td:hover {
-  background-color: #5b96a8;
+  background-color: #ffffff;
 }
-.my-custom-scrollbar {
-  position: relative;
-  height: 650px;
-  overflow: auto;
-  }
-  .table-wrapper-scroll-y {
-  display: block;
-  }
