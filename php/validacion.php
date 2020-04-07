@@ -1,6 +1,7 @@
 <?php 
 require_once('consultas\consultalogin.php');
 session_start();
+
     if(isset($_POST['login']))
     {
        if(empty($_POST['usuario']) || empty($_POST['clave']))

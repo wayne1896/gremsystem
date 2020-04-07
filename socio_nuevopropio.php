@@ -1,5 +1,5 @@
 <?php 
-  include('php\pcabeza\pcabezaperfil.php');
+  include('php\pcabeza\pcabezaperfil2.php');
  require_once ("config/db.php");
  require_once ("config/conexion.php");
 ?>
@@ -108,7 +108,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
-						<a href="socio.php" class="btn btn-danger">Atras</a>
+						<a href="php/logincliente.php" class="btn btn-danger">Atras</a>
 						<input type="submit" value="Guardar" class="btn btn-success">
 					</div>
 				</div>

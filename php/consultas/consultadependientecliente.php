@@ -1,12 +1,12 @@
 <?php
-	function lista_cursos($id){		
+	function lista_cursos($id2){		
 		include('php\conexion.php');	
-		$sql="SELECT * FROM dependientesclien where id_clien='$id'";
+		$sql="SELECT * FROM dependientesclien where id_clien='$id2'";
 		return $result=$mysqli->query($sql); 
 	}
 	function extraerdependienteUDT($id){
 		include('php\conexion.php');	
-		$sql="SELECT * FROM socio s JOIN dependientesclien d ON (s.id_clien=d.id_clien) where d.id_clien='$id'";
+		$sql="SELECT * FROM dependientesclien where id_socio='$id'";
 		return $result=$mysqli->query($sql); 
 	}	
 	

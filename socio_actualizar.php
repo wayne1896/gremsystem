@@ -1,5 +1,4 @@
 <?php
- session_start();
   include('php\pcabeza\pcabezacliente.php');
   if(isset($_GET['id'])){
    	$query=extraersocioUDT($_GET['id']);

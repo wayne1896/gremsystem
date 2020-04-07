@@ -45,7 +45,7 @@ include('php\consultas\consultacliente.php');
     <!-- Navbar -->
     <div class="navbar-header">
      
-      <a class="navbar-brand" href="#"><font color="" size="4">GremSystem</font></a>
+      <a class="navbar-brand" href="index.php"><font color="" size="4">GremSystem</font></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       

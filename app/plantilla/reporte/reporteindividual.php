@@ -14,7 +14,7 @@ if(isset($_GET['id'])){
     <header class="clearfix">
       <div class="icon" >
       
-        <img src="C:\xampp\htdocs\Gremsystem\app\plantilla\img\Logo2.jpg"  >
+        <img src="C:\xampp\htdocs\Gremsystem-cj\app\plantilla\img\Logo2.jpg"  >
       
       </div> 
       <div class="nombre">

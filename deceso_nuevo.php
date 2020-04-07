@@ -1,6 +1,7 @@
 <?php 
  include('php\pcabeza\pcabezadeceso.php');	
 ?>
+
 <div class="panel panel-default" style="margin-top: 10px"> 		
 	<div class="panel-heading">
 	

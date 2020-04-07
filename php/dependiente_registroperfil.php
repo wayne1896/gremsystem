@@ -12,7 +12,7 @@ session_start();
 		$parentesco=$_POST['parentesco'];
 		$fecha=$_POST['fecha'];
         $estado=$_POST['estado'];
-        $codigo=$_POST['codigoclien'];
+        $id_socio=$_POST['codigoclien'];
 		$sql="
 		INSERT INTO `dependientesclien`(`nombredependien`, `parentesco`,`fechanacimientodepen`, `estadodependien`,id_clien) 
 		 
@@ -21,7 +21,7 @@ session_start();
 		'$parentesco',
 		'$fecha',
         '$estado' ,
-        '$codigo'
+        '$id_socio'
 		)
 		";
 		if ($mysqli->query($sql)){
@@ -31,10 +31,11 @@ session_start();
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../dependienteperfil.php?s=".$msj);
+		header("Location: ../dependienteperfil.php?id=$id_socio");
 	}
 	if ($i=='UDT'){
 		$msj='';
+		$id_socio=$_POST['codigoclien'];
 		$codigo=$_POST['codigo'];
 		$nombre=$_POST['nombre'];
 		$parentesco=$_POST['parentesco'];
@@ -56,7 +57,7 @@ session_start();
 			$msj='errorudt';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: ../dependienteperfil.php?s=".$msj);
+		header("Location: ../dependienteperfil.php?id=$id_socio");
 
 	}
 	if ($i=='DLT'){

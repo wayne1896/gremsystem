@@ -22,20 +22,21 @@
         
 		
 		$sql="
-		INSERT INTO `socio`( `nombreclien`, `apellidoclien`,`direccionclien`, `claveclien`, `cedulaclien`, 
-		`fechaclien`,`telefonoclien`,`correoclient`, `estadoclien`, `id_plan`, `id_empleado`) 
+		INSERT INTO `socio`( `nombreclien`, `apellidoclien`, `direccionclien`, `claveclien`, `cedulaclien`, 
+		`fechaclien`,`telefonoclien`, `correoclient`, `estadoclien`, `id_plan`, `id_empleado`) 
 		VALUES (
-	   '$nombre',
-	   '$apellido',
-       '$direccion',
-       '$clave'
-	   '$cedula',
-	   '$fecha',
-	   '$telefono',
-	   'A',
-	   '$id_plan',
-	   '$id_empleado'
-		)";
+			'$nombre',
+			'$apellido',
+			'$direccion',
+			'$clave',
+			'$cedula',
+			'$fecha',
+			'$telefono',
+			'$correo',
+			'A',
+			'$id_plan',
+			'$id_empleado'
+			 )";
 		
 		
 		if ($mysqli->query($sql)){
@@ -45,7 +46,7 @@
 			$msj='error';
 			echo "error:".mysqli_error($mysqli);
 		}
-		header("Location: /logincliente.php?s=".$msj);
+		header("Location: ../php/logincliente.php?s=".$msj);
 	}
 	if ($i=='UDT'){
 		$msj='';

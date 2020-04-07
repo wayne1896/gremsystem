@@ -1,11 +1,10 @@
 <?php
-  include('php\pcabeza\pcabezadependiente.php');
+  include('php\pcabeza\pcabezaperfildependiente.php');
 			$id= $_GET['id'];
 			if(isset($_GET['id'])){
 				$query=extraerdependienteUDT($_GET['id']);
 			 $row=$query->fetch_assoc();
 			}
-			
 ?>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,7 +20,7 @@
   		<h1 align="center">Actualizar Dependiente</h1>
     </div>
     <div class="panel-body" style="margin-left: 60px">
-    	<form action="php\dependiente_registro.php?accion=UDT" method="POST">
+    	<form action="php\dependiente_registroperfil.php?accion=UDT" method="POST">
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
@@ -85,17 +84,17 @@
           <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label" hidden='True'>Estado<span style="color:red">*</span></label>
-						<input type="text" name='codigoclien' hidden="true" value="<?php echo $row['id_clien'];?>" placeholder="Estado de Dependiente" class="form-control">
+						<input type="text" name='codigoclien' Hidden="true" value="<?php echo $row['id_clien'];?>" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
-				<?php $id2=$row['id_clien'];?>
-          	
+          	<?php	$id2=$row['id_clien']
+			  ?>
     		<div class="row">
     			<div class="col-md-8 col-md-offset-2 col-sm-8
 	    			col-sm-offset-2 col-lg-8 col-Ig-offset-2 col-xs-12
 	    			col-xs-offset-0">
     		       <div class="form-group">
-				   <a href="dependiente.php?id=<?php echo $id2; ?>" class="btn btn-danger">Atras</a>
+				   <a href="dependienteperfil.php?id=<?php echo $id2; ?>" class="btn btn-danger">Atras</a>
     			      <input type="submit" value="Guardar" class="btn btn-success"> 
     		      </div>
     		    </div>	

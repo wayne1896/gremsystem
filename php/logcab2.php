@@ -14,7 +14,7 @@ include('consultas\consultalogin2.php');
   <meta name="author" content="">
 
   <title>GremSystem</title>
-  <link rel="icon" type="image/png" href="php/login.php" href="img\Logo2.jpg" />
+  <link rel="icon" type="image/png" href="..\img\Logo2.jpg" />
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -55,8 +55,7 @@ include('consultas\consultalogin2.php');
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="login.php?logout"><i class='glyphicon glyphicon-off' ></i><font color="red" size="4"> Salir</font></a></li>
-      </ul>
+		   </ul>
     </div>
 
   </nav>

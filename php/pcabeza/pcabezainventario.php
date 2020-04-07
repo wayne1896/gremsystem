@@ -50,7 +50,7 @@ include('php\consultas\consultainventario.php');
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><font color="" size="4">GremSystem</font></a>
+      <a class="navbar-brand" href="menu.php"><font color="" size="4">GremSystem</font></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -64,9 +64,52 @@ include('php\consultas\consultainventario.php');
     <li class="<?php echo $active_usuarios;?>"><a href=""><i  class='glyphicon glyphicon-plus-sign'></i><font color="" size="4"> Acerca de</font></a></li>
        </ul>
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="php\login.php?logout"><i class='glyphicon glyphicon-off' ></i><font color="red" size="4"> Salir</font></a></li>
-      </ul>
+      <?php 
+      session_start();
+      $id2=$_SESSION['User'];
+   
+     echo"<span style='color:WHITE'>Usuario ".$id2." </span>"; ?>
+    <!-- Navbar -->
+    <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user-circle fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+ 
+        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">Logout</a>
+        </div>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div id="wrapper">
+
+
+    <div id="content-wrapper">
+
+      
+</body>
+<!--Modal-->
+<div class="modal" id="exampleModal"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cerrar sesion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Desea cerrar su sesion?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <a type="button" class="btn btn-primary" href="Logout.php" >Cerrar Seccion</a>
+      </div>
     </div>
+  </div>
+</div>
 
   </nav>
 
@@ -76,6 +119,3 @@ include('php\consultas\consultainventario.php');
    
 
     <div id="content-wrapper">
-
-      
-</body>
