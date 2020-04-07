@@ -1,6 +1,6 @@
 <?php
-  include('php\pcabeza\pcabezadependiente.php');
-			$id2= $_GET['id'];
+  include('php\pcabeza\pcabezaperfildependiente.php');
+			$id= $_GET['id'];
 			if(isset($_GET['id'])){
 				$query=extraerdependienteUDT($_GET['id']);
 			 $row=$query->fetch_assoc();
@@ -20,7 +20,7 @@
   		<h1 align="center">Actualizar Dependiente</h1>
     </div>
     <div class="panel-body" style="margin-left: 60px">
-    	<form action="php\dependiente_registro.php?accion=UDT" method="POST">
+    	<form action="php\dependiente_registroperfil.php?accion=UDT" method="POST">
     		<div class="row">
     			<div class="col-md-4 col-md-offset-2 col-sm-4
     			col-sm-offset-2 col-lg-4 col-Ig-offset-2 col-xs-12
@@ -84,7 +84,7 @@
           <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label" hidden='True'>Estado<span style="color:red">*</span></label>
-						<input type="text" name='codigoclien' hidden="true" value="<?php echo $row['id_clien'];?>" placeholder="Estado de Dependiente" class="form-control">
+						<input type="text" name='codigoclien' Hidden="true" value="<?php echo $row['id_clien'];?>" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
           	

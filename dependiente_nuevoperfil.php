@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 		
 		include('php\pcabeza\pcabezaperfildependiente.php');
 		
@@ -8,9 +8,18 @@ session_start();
 			$query=extraerdependienteUDT($_GET['id']);
 		 $row=$query->fetch_assoc();
 		 
-	 }echo $id;
+	 }
         
 ?>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest minified bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <div class="panel panel-default" style="margin-top: 10px"> 		
 	<div class="panel-heading">
 		<h1 align="center">Nuevo Dependiente</h1> 			
@@ -47,7 +56,7 @@ session_start();
 			<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label" hidden='True'>Estado<span style="color:red">*</span></label>
-						<input type="text" name='codigoclien' hidden='True' value="<?php $id ?>" placeholder="Estado de Dependiente" class="form-control">
+						<input type="text" name='codigoclien' hidden='True' value="<?php echo $id; ?>" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,5 @@
 <?php 
-  include('php\pcabeza\pcabezaperfil.php');
+  include('php\pcabeza\pcabezaperfil2.php');
  require_once ("config/db.php");
  require_once ("config/conexion.php");
 ?>

@@ -14,7 +14,7 @@ include('consultas\consultalogin2.php');
   <meta name="author" content="">
 
   <title>GremSystem</title>
-  <link rel="icon" type="image/png" href="php/login.php" href="img\Logo2.jpg" />
+  <link rel="icon" type="image/png" href="..\img\Logo2.jpg" />
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

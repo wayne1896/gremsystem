@@ -13,7 +13,7 @@ include('consultas\consultalogin.php');
   <meta name="author" content="">
 
   <title>GremSystem</title>
-  <link rel="icon" type="image/png" href="img\Logo2.jpg" />
+  <link rel="icon" type="image/png" href="..\img\Logo2.jpg" />
 
  
 
@@ -43,7 +43,7 @@ include('consultas\consultalogin.php');
     <!-- Navbar -->
     <div class="navbar-header">
      
-      <a class="navbar-brand" href="#"><font color="" size="4">GremSystem</font></a>
+    <a class="navbar-brand" href="../index.php"><font color="" size="4">GremSystem</font></a>
     </div>
     
 

@@ -1,6 +1,6 @@
 <?php 
  include('php\pcabeza\pcabezaperfil.php');
- session_start();
+
  $id2 = $_GET['id2'];
  if(isset($_GET['id2'])){
 	$query= extraersocio2UDT($_GET['id2']);

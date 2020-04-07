@@ -2,7 +2,6 @@
 include('php\consultas\consultadependientecliente.php');
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   
@@ -42,8 +41,12 @@ include('php\consultas\consultadependientecliente.php');
 <body id="page-top">
 
   <nav class="navbar navbar navbar-dark bg-dark static-top">
+  
+  <?php
+  session_start();
+   $id2=$_SESSION['User'];?>
 
-    <a class="navbar-brand mr-1" href="menu.php">GremSystem</a>
+    <a class="navbar-brand mr-1" href="perfil.php?id2=<?php echo "$id2" ?>">GremSystem</a>
 
 
 
@@ -52,6 +55,9 @@ include('php\consultas\consultadependientecliente.php');
       
     </form>
 
+    <?php 
+    
+     echo"<span style='color:WHITE'>Usuario ".$id2." </span>"; ?>
     <!-- Navbar -->
     <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,7 +65,7 @@ include('php\consultas\consultadependientecliente.php');
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
  
-        <a class="dropdown-item" href="php\Logout.php" data-toggle="modal" data-target="#logoutModal">Logout</a>
+        <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">Logout</a>
         </div>
       </li>
     </ul>
@@ -73,3 +79,23 @@ include('php\consultas\consultadependientecliente.php');
 
       
 </body>
+<!--Modal-->
+<div class="modal" id="exampleModal"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cerrar sesion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Desea cerrar su sesion?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <a type="button" class="btn btn-primary" href="Logout.php" >Cerrar Seccion</a>
+      </div>
+    </div>
+  </div>
+</div>
