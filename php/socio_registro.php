@@ -1,6 +1,7 @@
 <?php 
 	include'conexion.php';	
-	
+
+
 	$i='';
 	if(isset($_GET['accion'])){
 		$i=$_GET['accion'];

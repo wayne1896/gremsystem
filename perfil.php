@@ -1,6 +1,5 @@
 <?php 
  include('php\pcabeza\pcabezaperfil.php');
-
  $id2 = $_GET['id2'];
  if(isset($_GET['id2'])){
 	$query= extraersocio2UDT($_GET['id2']);
@@ -39,9 +38,12 @@
     			<div class="form-group">
     				<label class="control-label">Nombre</label>
     				<input type="text" readonly="" name="nombre" required="" placeholder="Nombre" class="form-control" value="<?php echo $row['nombreclien'] ?>">
-    				
+					<input type="text" readonly="" name="codigo" hidden="true" required="" placeholder="Nombre" class="form-control" value="<?php echo $row['id_clien'] ?>">
+					<?php $_SESSION['codigo']=$row['id_clien'];
+					?>
     			</div>
 				</div>
+				
 				
 					<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
@@ -104,7 +106,9 @@
     		
     				<label class="control-label">Deuda Pendiente </label>
     				<input type="telefono" name="deuda" readonly="" required="" placeholder="Deuda Pendiente" class="form-control"
-                    value="<?php echo $row['deuda']?>">
+                    value="<?php echo $row['deuda']?>"><p><br>
+					<a href="index2.php?deuda=<?php echo $row['deuda']?>" class="fab fa-cc-stripe fa-4x"style="margin-left: 240px"></a>
+					</p>
     				
     			</div>
     			</div>

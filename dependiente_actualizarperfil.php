@@ -59,16 +59,22 @@
     				
     			</div>
     			</div>
+					
 					<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Parentesco<span style="color:red">*</span></label>
-						<input type="text" id="parentesco" name="parentesco" required="" placeholder="Apellido" class="form-control"
-						value="<?php echo $row['parentesco']?>">
+    				<select class="form-control" name="parentesco">
+                       <option value="Padre">Padre</option>
+                       <option value="Madre">Madre</option>
+					   <option value="Hijo">Hijo</option>
+                       <option value="Hija">Hija</option>
+                       <option value="conyuge">Cónyuge</option>
+
+
+    				 </select>
 					</div>
 				</div>
-				</div>
-		
-          <div class="row">
+  
     			
 
     			<div class="col-md-4 col-md-offset-2 col-sm-4
@@ -80,7 +86,7 @@
     				
     			  </div>
     			</div>
-          </div>
+          </div></div>
           <div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label" hidden='True'>Estado<span style="color:red">*</span></label>

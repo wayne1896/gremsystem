@@ -32,10 +32,7 @@
     				
     			</div>
     			</div>
-
-
-          </div>
-          <div class="col-md-4 col-md-offset-0 col-sm-4
+				<div class="col-md-4 col-md-offset-0 col-sm-4
     			col-sm-offset-0 col-lg-4 col-Ig-offset-0 col-xs-12
     			col-xs-offset-0">
     			<div class="form-group">
@@ -50,6 +47,10 @@
     				
     			</div>
     			</div>
+
+
+          </div>
+
           </div>
     				
           <div class="row">

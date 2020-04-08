@@ -74,6 +74,7 @@
                        <option value="1" >Basico</option>
                         <option value="2" >Extra</option>
  						<option value="3" >Superior</option>
+						 <option value="4" >Avanzado</option>
     				 </select>
     				
     			</div>

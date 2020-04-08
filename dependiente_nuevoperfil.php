@@ -34,25 +34,33 @@
 						<input type="text" id="nombre" name="nombre" required="" placeholder="Nombre" class="form-control">
 					</div>
 				</div>
+				
 				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Parentesco<span style="color:red">*</span></label>
-						<input type="text" id="parentesco" name="parentesco" required="" placeholder="Parentesco" class="form-control">
+    				<select class="form-control" name="parentesco">
+                       <option value="Padre">Padre</option>
+                       <option value="Madre">Madre</option>
+					   <option value="Hijo">Hijo</option>
+                       <option value="Hija">Hija</option>
+                       <option value="conyuge">Cónyuge</option>
+
+
+    				 </select>
 					</div>
 				</div>
-				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
+				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Fecha de Nacimiento<span style="color:red">*</span></label>
 						<input type="date" id="fecha" name="fecha" required="" class="form-control">
 					</div>
 				</div>
-				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
+				<div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-lg-4 col-lg-offset-0 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label">Estado<span style="color:red">*</span></label>
 						<input type="text" id="estado" name="estado" required="" placeholder="Estado de Dependiente" class="form-control">
 					</div>
 				</div>
-			</div>
 			<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
 					<div class="form-group">
 						<label class="control-label" hidden='True'>Estado<span style="color:red">*</span></label>

@@ -53,11 +53,23 @@
 						<input type="date" id="fecha" name="fecha" required="" class="form-control">
 					</div>
 				</div>
-				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-0">
+				
+
+
+				<div class="col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-lg-5 col-lg-offset-2 col-xs-12 col-xs-offset-5">
 					<div class="form-group">
-						<label class="control-label">Cargo<span style="color:red">*</span></label>
-						<input type="text" id="cargo" name="cargo" required="" placeholder="Posicion o Cargo" class="form-control">
-					</div>
+    				<label class="control-label">Cargo <span style="color:red">*</span></label>
+    				<select class="form-control" name="cargo">
+                       <option value="Cobrador">Cobrador</option>
+                       <option value="Secretario">Secretario</option>
+					   <option value="Secretario">Secretaria</option>
+                       <option value="Contable">Contable</option>
+                       <option value="Conserje">Conserje</option>
+
+
+    				 </select>
+    				
+    			</div>
 				</div>
 			</div>
 			<div class="row">
